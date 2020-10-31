@@ -78,3 +78,8 @@ def bold_green(s):
 
 def bold_yellow(s):
     return format_string(s, '1;33')
+
+
+def read_file(path):
+    with open(path, 'r') as f:
+        return f.read()
