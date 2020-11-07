@@ -19,18 +19,7 @@ class BDWM:
 
     _HOST = 'bbs.pku.edu.cn'
     _BOARD_MODES = {'topic', 'single'}
-    _BID_MAP = {  # Keys should be in lower case.
-        'sysop': 1,
-        'test': 7,
-        'triangle': 22,
-        'football': 93,
-        'wmqjz': 306,
-        'bbsinfo': 352,
-        'sports_game': 519,
-        'wmreview': 728,
-        'sandbox': 779,
-    }
-
+    _BOARD_CONFIG = 'board.json'
     _POST_ACTION_NAME = {
         'mark': '保留',
         'unmark': '取消保留',
@@ -41,7 +30,7 @@ class BDWM:
         'highlight': '高亮',
         'unhighlight': '取消高亮',
     }
-    
+
     def __init__(self, id, passwd):
         self._id = id
         self._passwd = passwd
@@ -60,7 +49,14 @@ class BDWM:
         skey, self._uid = self._login()
         self._cookie = 'skey={}; uid={}'.format(skey, self._uid)
         self._headers["Cookie"] = self._cookie
-    
+        with open(self._BOARD_CONFIG) as f:
+            self._boards = json.load(f)
+
+    def _get_bid(self, board_name) -> int:
+        if board_name not in self._boards:
+            raise ValueError(bold_red('没有这个版面，或暂不支持这个版面'))
+        return self._boards[board_name]['id']
+
     def _get_action_url(self, action_name):
         return 'https://{}/v2/{}.php'.format(self._HOST, action_name)
         
@@ -85,17 +81,17 @@ class BDWM:
     def get_board_page(self, board_name, page: int = 1, mode='topic'):
         assert mode in self._BOARD_MODES, "Not a correct mode!"
         page_url = '{}?bid={}&mode={}&page={}'.format(
-            self._get_action_url('thread'), self._BID_MAP[board_name.lower()], mode, page)
+            self._get_action_url('thread'), self._get_bid(board_name), mode, page)
         return self._get_page_content(page_url)
 
     def get_single_post_page(self, board_name, postid: int):
         page_url = '{}?bid={}&postid={}'.format(
-            self._get_action_url('post-read-single'), self._BID_MAP[board_name.lower()], postid)
+            self._get_action_url('post-read-single'), self._get_bid(board_name), postid)
         return self._get_page_content(page_url)
 
     def get_post_page(self, board_name, threadid: int):
         page_url = '{}?bid={}&threadid={}'.format(
-            self._get_action_url('post-read'), self._BID_MAP[board_name.lower()], threadid)
+            self._get_action_url('post-read'), self._get_bid(board_name), threadid)
         return self._get_page_content(page_url)
 
     # Functions for getting action response.
@@ -118,7 +114,7 @@ class BDWM:
     def create_post(self, board_name, title, content_string,
                     mail_re=True, no_reply=False, signature=None, parent_id: int = None):
         content = get_content_from_raw_string(content_string)
-        bid = self._BID_MAP[board_name.lower()]
+        bid = self._get_bid(board_name)
 
         data = {
             'title': title,
@@ -145,7 +141,7 @@ class BDWM:
 
     def edit_post(self, board_name, postid: int, title, content_string, signature=None):
         content = get_content_from_raw_string(content_string)
-        bid = self._BID_MAP[board_name.lower()]
+        bid = self._get_bid(board_name)
         data = {
             'title': title,
             'content': content,
@@ -163,10 +159,10 @@ class BDWM:
     def forward_post(self, from_board_name, to_board_name, postid: int):
         data = {
             'from': 'post',
-            'bid': self._BID_MAP[from_board_name.lower()],
+            'bid': self._get_bid(from_board_name),
             'postid': postid,
             'to': 'post',
-            'tobid': self._BID_MAP[to_board_name.lower()]
+            'tobid': self._get_bid(to_board_name),
         }
         self._get_response_data('ajax/forward', 
                                 data, 
@@ -176,7 +172,7 @@ class BDWM:
     def operate_post(self, board_name, postid_list, action):
         assert action in self._POST_ACTION_NAME, '无效的帖子操作！'
         data = {
-            "bid": self._BID_MAP[board_name.lower()],
+            "bid": self._get_bid(board_name),
             "list": '[{}]'.format(','.join(postid_list)),
             "action": action
         }
@@ -207,7 +203,7 @@ class BDWM:
     def add_new_collection(self, board_name, path, postid: int):
         data = {
             "from": "post",
-            "bid": self._BID_MAP[board_name.lower()],
+            "bid": self._get_bid(board_name),
             "postid": postid,
             "base": path
         }

@@ -1,0 +1,40 @@
+{
+  "sysop": {
+    "id": 1,
+    "section": "0"
+  },
+  "Test": {
+    "id": 7,
+    "section": "0"
+  },
+  "Triangle": {
+    "id": 22,
+    "section": "8"
+  },
+  "Football": {
+    "id": 93,
+    "section": "9"
+  },
+  "WMQJZ": {
+    "id": 306,
+    "section": "0",
+    "private": true
+  },
+  "BBSInfo": {
+    "id": 352,
+    "section": "0"
+  },
+  "Sports_Game": {
+    "id": 519,
+    "section": "9"
+  },
+  "WMReview": {
+    "id": 728,
+    "section": "0"
+  },
+  "sandbox": {
+    "id": 779,
+    "section": "0",
+    "private": true
+  }
+}
