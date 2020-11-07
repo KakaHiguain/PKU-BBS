@@ -82,18 +82,18 @@ class BDWM:
     def _get_page_content(self, url):
         return self._session.post(url, headers=self._headers).text
     
-    def get_board_page(self, board_name, page=1, mode='topic'):
+    def get_board_page(self, board_name, page: int = 1, mode='topic'):
         assert mode in self._BOARD_MODES, "Not a correct mode!"
         page_url = '{}?bid={}&mode={}&page={}'.format(
             self._get_action_url('thread'), self._BID_MAP[board_name.lower()], mode, page)
         return self._get_page_content(page_url)
 
-    def get_single_post_page(self, board_name, postid):
+    def get_single_post_page(self, board_name, postid: int):
         page_url = '{}?bid={}&postid={}'.format(
             self._get_action_url('post-read-single'), self._BID_MAP[board_name.lower()], postid)
         return self._get_page_content(page_url)
 
-    def get_post_page(self, board_name, threadid):
+    def get_post_page(self, board_name, threadid: int):
         page_url = '{}?bid={}&threadid={}'.format(
             self._get_action_url('post-read'), self._BID_MAP[board_name.lower()], threadid)
         return self._get_page_content(page_url)
@@ -116,7 +116,7 @@ class BDWM:
         return '{{{}}}'.format(post_info)
 
     def create_post(self, board_name, title, content_string,
-                    mail_re=True, no_reply=False, signature=None, parent_id=None):
+                    mail_re=True, no_reply=False, signature=None, parent_id: int = None):
         content = get_content_from_raw_string(content_string)
         bid = self._BID_MAP[board_name.lower()]
 
@@ -137,13 +137,13 @@ class BDWM:
         print(bold_green(action + '成功！') + '帖子链接：{}'.format(post_link))
         return response_data['result']
 
-    def reply_post(self, board_name, main_postid, main_title, content_string,
+    def reply_post(self, board_name, main_postid: int, main_title, content_string,
                    mail_re=True, no_reply=False, signature=None):
         """Reply to the post with main_postid and main_title"""
         return self.create_post(board_name, "Re: " + main_title, content_string,
                                 mail_re, no_reply, signature, parent_id=main_postid)
 
-    def edit_post(self, board_name, postid, title, content_string, signature=None):
+    def edit_post(self, board_name, postid: int, title, content_string, signature=None):
         content = get_content_from_raw_string(content_string)
         bid = self._BID_MAP[board_name.lower()]
         data = {
@@ -160,7 +160,7 @@ class BDWM:
             self._get_action_url('post-read-single'), bid, postid)
         print(bold_green('修改帖子成功！') + '帖子链接：{}'.format(post_link))
         
-    def forward_post(self, from_board_name, to_board_name, postid):
+    def forward_post(self, from_board_name, to_board_name, postid: int):
         data = {
             'from': 'post',
             'bid': self._BID_MAP[from_board_name.lower()],
@@ -204,12 +204,11 @@ class BDWM:
         print(bold_green('已创建精华区目录 "{}"'.format(title)))
         return response_data['name']
 
-    def add_new_collection(self, board_name, postid, threadid, path):
+    def add_new_collection(self, board_name, path, postid: int):
         data = {
             "from": "post",
             "bid": self._BID_MAP[board_name.lower()],
             "postid": postid,
-            "threadid": threadid,
             "base": path
         }
         response_data = self._get_response_data('ajax/collection_import', data, '添加精华区文件')
