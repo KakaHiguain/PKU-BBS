@@ -227,7 +227,6 @@ class BDWM:
         current_path = ''
         parts = directory_path.split('/')
         for dir_name in parts:
-            print(dir_name)
             if not dir_name:
                 continue
             if not current_path:
@@ -243,6 +242,5 @@ class BDWM:
             else:
                 sub_path = collection_items[dir_name]
             current_api_path = current_api_path + '/' + sub_path
-            print(current_api_path)
 
         return current_api_path

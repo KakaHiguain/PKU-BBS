@@ -63,22 +63,17 @@ def edit(id, password, password_file, board, postid, title, content, content_fil
 @click.option('--password', help='The password of your BDWM ID')
 @click.option('--password-file', help='The file containing your password')
 @click.option('--board', required=True, help='The name of the board you want to import collection')
-@click.option('--path', required=True, help='Collection path')
+@click.option('--path', required=True, help='Collection path we see on the website')
 @click.option('--postids', required=True,
               help='The IDs of the post you want to collect, split by ","')
-@click.option('--new-dir', help='Create a new sub-directory and import to this directory.')
-def import_collection(id, password, password_file, board, path, postids, new_dir):
+@click.option('--create-if-not-exists', is_flag=True, default=False,
+              help='Create a new sub-directory if the path does not exists.')
+def import_collection(id, password, password_file, board, path, postids, create_if_not_exists):
     bdwm = _get_bdwm_client(id, password, password_file)
-    if new_dir:
-        sub_dirs = bdwm.get_collection_items(path)
-        if new_dir in sub_dirs:
-            click.echo('Warning: 此子目录已存在')
-            sub_path = sub_dirs[new_dir]
-        else:
-            sub_path = bdwm.create_collection_dir(path, new_dir, bms=id)
-        path = '{}/{}'.format(path, sub_path)
+    api_path = bdwm.get_collection_dir_path(board, path, create_if_not_exists)
+
     for postid in postids.split(','):
-        bdwm.add_new_collection(board, path, int(postid))
+        bdwm.add_new_collection(board, api_path, int(postid))
 
 
 if __name__ == '__main__':
