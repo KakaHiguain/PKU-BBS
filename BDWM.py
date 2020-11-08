@@ -20,6 +20,7 @@ class BDWM:
     _HOST = 'bbs.pku.edu.cn'
     _BOARD_MODES = {'topic', 'single'}
     _BOARD_CONFIG = 'board.json'
+    _COLLECTION_BASE_PATH_PATTERN = "groups/GROUP_{}/{}"
     _POST_ACTION_NAME = {
         'mark': '保留',
         'unmark': '取消保留',
@@ -52,10 +53,10 @@ class BDWM:
         with open(self._BOARD_CONFIG) as f:
             self._boards = json.load(f)
 
-    def _get_bid(self, board_name) -> int:
+    def _get_board_info(self, board_name, key) -> int:
         if board_name not in self._boards:
             raise ValueError(bold_red('没有这个版面，或暂不支持这个版面'))
-        return self._boards[board_name]['id']
+        return self._boards[board_name][key]
 
     def _get_action_url(self, action_name):
         return 'https://{}/v2/{}.php'.format(self._HOST, action_name)
@@ -81,17 +82,19 @@ class BDWM:
     def get_board_page(self, board_name, page: int = 1, mode='topic'):
         assert mode in self._BOARD_MODES, "Not a correct mode!"
         page_url = '{}?bid={}&mode={}&page={}'.format(
-            self._get_action_url('thread'), self._get_bid(board_name), mode, page)
+            self._get_action_url('thread'), self._get_board_info(board_name, 'id'), mode, page)
         return self._get_page_content(page_url)
 
     def get_single_post_page(self, board_name, postid: int):
-        page_url = '{}?bid={}&postid={}'.format(
-            self._get_action_url('post-read-single'), self._get_bid(board_name), postid)
+        page_url = '{}?bid={}&postid={}'.format(self._get_action_url('post-read-single'),
+                                                self._get_board_info(board_name, 'id'),
+                                                postid)
         return self._get_page_content(page_url)
 
     def get_post_page(self, board_name, threadid: int):
-        page_url = '{}?bid={}&threadid={}'.format(
-            self._get_action_url('post-read'), self._get_bid(board_name), threadid)
+        page_url = '{}?bid={}&threadid={}'.format(self._get_action_url('post-read'),
+                                                  self._get_board_info(board_name, 'id'),
+                                                  threadid)
         return self._get_page_content(page_url)
 
     # Functions for getting action response.
@@ -114,7 +117,7 @@ class BDWM:
     def create_post(self, board_name, title, content_string,
                     mail_re=True, no_reply=False, signature=None, parent_id: int = None):
         content = get_content_from_raw_string(content_string)
-        bid = self._get_bid(board_name)
+        bid = self._get_board_info(board_name, 'id')
 
         data = {
             'title': title,
@@ -141,7 +144,7 @@ class BDWM:
 
     def edit_post(self, board_name, postid: int, title, content_string, signature=None):
         content = get_content_from_raw_string(content_string)
-        bid = self._get_bid(board_name)
+        bid = self._get_board_info(board_name, 'id')
         data = {
             'title': title,
             'content': content,
@@ -159,10 +162,10 @@ class BDWM:
     def forward_post(self, from_board_name, to_board_name, postid: int):
         data = {
             'from': 'post',
-            'bid': self._get_bid(from_board_name),
+            'bid': self._get_board_info(from_board_name, 'id'),
             'postid': postid,
             'to': 'post',
-            'tobid': self._get_bid(to_board_name),
+            'tobid': self._get_board_info(to_board_name, 'id'),
         }
         self._get_response_data('ajax/forward', 
                                 data, 
@@ -172,7 +175,7 @@ class BDWM:
     def operate_post(self, board_name, postid_list, action):
         assert action in self._POST_ACTION_NAME, '无效的帖子操作！'
         data = {
-            "bid": self._get_bid(board_name),
+            "bid": self._get_board_info(board_name, 'id'),
             "list": '[{}]'.format(','.join(postid_list)),
             "action": action
         }
@@ -203,10 +206,43 @@ class BDWM:
     def add_new_collection(self, board_name, path, postid: int):
         data = {
             "from": "post",
-            "bid": self._get_bid(board_name),
+            "bid": self._get_board_info(board_name, 'id'),
             "postid": postid,
             "base": path
         }
         response_data = self._get_response_data('ajax/collection_import', data, '添加精华区文件')
         print(bold_green('添加精华区文件成功！'))
         return response_data['name']
+
+    def get_collection_dir_path(self, board_name, directory_path, create_if_not_exists=False):
+        """Get the collection directory path for BDWM api, the input directory_path is the path
+        we see on the website.
+        For example, the api path of "历期起居注/2020年11月" collection directory in WMReview board
+        is "groups/GROUP_0/WMReview/D5448A5D2/D86B358DF".
+        If create_if_not_exists is False, we will raise error when the directory doesn't exist,
+        otherwise we will create a new one.
+        """
+        section = self._get_board_info(board_name, 'section')
+        current_api_path = self._COLLECTION_BASE_PATH_PATTERN.format(section, board_name)
+        current_path = ''
+        parts = directory_path.split('/')
+        for dir_name in parts:
+            print(dir_name)
+            if not dir_name:
+                continue
+            if not current_path:
+                current_path = dir_name
+            else:
+                current_path = current_path + '/' + dir_name
+            collection_items = self.get_collection_items(current_api_path)
+            if dir_name not in collection_items:
+                if not create_if_not_exists:
+                    raise ValueError(bold_red('{}版精华区不存在目录：【{}】！'.format(
+                        board_name, current_path)))
+                sub_path = self.create_collection_dir(current_api_path, dir_name, bms=self._id)
+            else:
+                sub_path = collection_items[dir_name]
+            current_api_path = current_api_path + '/' + sub_path
+            print(current_api_path)
+
+        return current_api_path
