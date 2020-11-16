@@ -98,7 +98,7 @@ class BDWM:
         return self._get_page_content(page_url)
 
     # Functions for getting action response.
-    def _get_response_data(self, relative_url, data, action_string):
+    def _get_response_data(self, relative_url, data: dict, action_string) -> dict:
         response_data = json.loads(
             self._session.post(self._get_action_url(relative_url), 
                                headers=self._headers,
@@ -183,6 +183,14 @@ class BDWM:
             'ajax/operate_post', data, 
             '{}帖子'.format(self._POST_ACTION_NAME[action]))
         print(bold_green('{}帖子成功！'.format(self._POST_ACTION_NAME[action])))
+
+    def get_post_by_num(self, board_name, internal_postid: int):
+        """Get information of a post from its board name and the postid inside this board"""
+        data = {
+            "bid": self._get_board_info(board_name, 'id'),
+            "num": internal_postid,
+        }
+        return self._get_response_data('ajax/get_post_by_num', data, '按照序号查找版内帖子')
 
     def get_collection_items(self, path):
         data = {"path": path}
