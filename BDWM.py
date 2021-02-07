@@ -9,6 +9,7 @@ Created on Mon Mar 23 21:37:13 2020
 from hashlib import md5
 import json
 import requests
+import urllib.parse
 
 from utils import get_content_from_raw_string, bold_green, bold_red
 
@@ -58,8 +59,11 @@ class BDWM:
             raise ValueError(bold_red('没有这个版面，或暂不支持这个版面'))
         return self._boards[board_name][key]
 
-    def _get_action_url(self, action_name):
-        return 'https://{}/v2/{}.php'.format(self._HOST, action_name)
+    def _get_action_url(self, action_name, **params):
+        base_url = 'https://{}/v2/{}.php'.format(self._HOST, action_name)
+        if not params:
+            return base_url
+        return base_url + '?' + urllib.parse.urlencode(params)
         
     def _login(self):
         token = md5('{1}{0}{1}'.format(self._id, self._passwd).encode('utf8'))
@@ -81,20 +85,26 @@ class BDWM:
     
     def get_board_page(self, board_name, page: int = 1, mode='topic'):
         assert mode in self._BOARD_MODES, "Not a correct mode!"
-        page_url = '{}?bid={}&mode={}&page={}'.format(
-            self._get_action_url('thread'), self._get_board_info(board_name, 'id'), mode, page)
+        page_url = self._get_action_url(
+            'thread', bid=self._get_board_info(board_name, 'id'), mode=mode, page=page)
         return self._get_page_content(page_url)
 
     def get_single_post_page(self, board_name, postid: int):
-        page_url = '{}?bid={}&postid={}'.format(self._get_action_url('post-read-single'),
-                                                self._get_board_info(board_name, 'id'),
-                                                postid)
+        page_url = self._get_action_url(
+            'post-read-single', bid=self._get_board_info(board_name, 'id'), postid=postid)
         return self._get_page_content(page_url)
 
     def get_post_page(self, board_name, threadid: int):
-        page_url = '{}?bid={}&threadid={}'.format(self._get_action_url('post-read'),
-                                                  self._get_board_info(board_name, 'id'),
-                                                  threadid)
+        page_url = self._get_action_url(
+            'post-read', bid=self._get_board_info(board_name, 'id'), threadid=threadid)
+        return self._get_page_content(page_url)
+
+    def get_mail_page(self, postid: int):
+        page_url = self._get_action_url('mail-read', postid=postid)
+        return self._get_page_content(page_url)
+
+    def get_mail_list_page(self):
+        page_url = self._get_action_url('mail')
         return self._get_page_content(page_url)
 
     # Functions for getting action response.
@@ -131,8 +141,7 @@ class BDWM:
         action = '回帖' if parent_id else '发帖'
         response_data = self._get_response_data('ajax/create_post', data, action)
         postid = response_data['result']['postid']
-        post_link = '{}?bid={}&postid={}'.format(
-            self._get_action_url('post-read-single'), bid, postid)
+        post_link = self._get_action_url('post-read-single', bid=bid, postid=postid)
         print(bold_green(action + '成功！') + '帖子链接：{}'.format(post_link))
         return response_data['result']
 
@@ -155,8 +164,7 @@ class BDWM:
         if signature is not None:
             data['signature'] = signature
         self._get_response_data('ajax/edit_post', data, '修改帖子')
-        post_link = '{}?bid={}&postid={}'.format(
-            self._get_action_url('post-read-single'), bid, postid)
+        post_link = self._get_action_url('post-read-single', bid=bid, postid=postid)
         print(bold_green('修改帖子成功！') + '帖子链接：{}'.format(post_link))
         
     def forward_post(self, from_board_name, to_board_name, postid: int):
