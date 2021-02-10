@@ -114,5 +114,17 @@ def import_collection(id, password, password_file, board, path, postids, interna
         bdwm.add_new_collection(board, api_path, int(postid))
 
 
+@main.command()
+@click.option('--id', required=True, help='Your BDWM ID')
+@click.option('--password', help='The password of your BDWM ID')
+@click.option('--password-file', help='The file containing your password')
+@click.option('--board', required=True, help='The name of the board you want to post to')
+# TODO: Add validation.
+@click.option('--start-datetime', required=True, help='The start date and time, YYYYMMDDHHMMSS')
+@click.option('--end-datetime', required=True, help='The end date and time, YYYYMMDDHHMMSS')
+def forward_mail_within_time_range(id, password, password_file, board, start_datetime, end_datetime):
+    bdwm = _get_bdwm_client(id, password, password_file)
+    # TBD
+
 if __name__ == '__main__':
     main()

@@ -124,6 +124,7 @@ class BDWM:
             post_info += ',"parentid":{}'.format(parent_id)
         return '{{{}}}'.format(post_info)
 
+    # Functions about post.
     def create_post(self, board_name, title, content_string,
                     mail_re=True, no_reply=False, signature=None, parent_id: int = None):
         content = get_content_from_raw_string(content_string)
@@ -179,7 +180,11 @@ class BDWM:
                                 data, 
                                 '转帖到{}版'.format(to_board_name))
         print(bold_green('已成功转发到{}版！'.format(to_board_name)))
-    
+
+    def forward_post_to_user(self, from_board_name, postid: int, bid: int):
+        # Not implemented yet.
+        pass
+
     def operate_post(self, board_name, postid_list, action):
         assert action in self._POST_ACTION_NAME, '无效的帖子操作！'
         data = {
@@ -200,6 +205,24 @@ class BDWM:
         }
         return self._get_response_data('ajax/get_post_by_num', data, '按照序号查找版内帖子')
 
+    # Functions about mail.
+    def forward_mail_to_board(self, to_board_name, postid: int):
+        data = {
+            "from": "mail",
+            "postid": postid,
+            "to": "post",
+            "tobid": self._get_board_info(to_board_name, 'id'),
+        }
+        self._get_response_data('ajax/forward',
+                                data,
+                                '转发邮件到{}版'.format(to_board_name))
+        print(bold_green('已成功转发到{}版！'.format(to_board_name)))
+
+    def forward_mail_to_user(self, postid: int, bid: int):
+        # Not implemented yet.
+        pass
+
+    # Functions about collections.
     def get_collection_items(self, path):
         data = {"path": path}
         collection_items = {}
