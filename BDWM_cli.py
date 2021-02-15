@@ -6,12 +6,13 @@ Created on Sat Oct 31 19:22:48 2020
 @author: KakaHiguain@BDWM
 """
 
+import datetime
 from typing import List
 
 import click
 
 from BDWM import BDWM
-from utils import read_file
+from utils import read_file, get_mail_postid_and_time
 
 
 def _get_bdwm_client(id, password, password_file):
@@ -124,7 +125,32 @@ def import_collection(id, password, password_file, board, path, postids, interna
 @click.option('--end-datetime', required=True, help='The end date and time, YYYYMMDDHHMMSS')
 def forward_mail_within_time_range(id, password, password_file, board, start_datetime, end_datetime):
     bdwm = _get_bdwm_client(id, password, password_file)
-    # TBD
+    # 20200806160531
+    start_datetime = datetime.datetime(int(start_datetime[0:4]), int(start_datetime[4:6]),
+                                       int(start_datetime[6:8]), int(start_datetime[8:10]),
+                                       int(start_datetime[10:12]), int(start_datetime[12:14]))
+    end_datetime = datetime.datetime(int(end_datetime[0:4]), int(end_datetime[4:6]),
+                                     int(end_datetime[6:8]), int(end_datetime[8:10]),
+                                     int(end_datetime[10:12]), int(end_datetime[12:14]))
+    page = 1
+    finished = False
+    postids = []
+    while not finished:
+        mails = get_mail_postid_and_time(bdwm.get_mail_content(page=page))
+        for mail in mails:
+            if mail[1] < start_datetime:
+                finished = True
+                break
+            if mail[1] > end_datetime:
+                continue
+            postids.append(mail[0])
+        page += 1
+
+    # bdwm.create_post(board, 'Soy 莫得感情的开标机器', '')
+    for postid in reversed(postids):
+        bdwm.forward_mail_to_board(board, postid)
+    # bdwm.create_post(board, 'Adios', '')
+
 
 if __name__ == '__main__':
     main()

@@ -5,6 +5,11 @@ Created on Mon Mar 23 21:37:13 2020
 
 @author: KakaHiguain@BDWM
 """
+import datetime
+from typing import List, Tuple
+
+from bs4 import BeautifulSoup
+
 
 SEPARATE_BAR = "======================"
 
@@ -83,3 +88,19 @@ def bold_yellow(s):
 def read_file(path):
     with open(path, 'r') as f:
         return f.read()
+
+
+def get_mail_postid_and_time(page_content) -> List[Tuple[int, datetime.datetime]]:
+    soup = BeautifulSoup(page_content, features="html.parser")
+
+    mails = soup.find_all('div', attrs={'class': 'list-item row-wrapper'})
+    postids = []
+    for mail in mails:
+        if 'data-itemid' not in mail.attrs:
+            continue
+        mail_time = mail.find('span', attrs={'class': 'time l'}).text
+        # 2020-08-06 16:05:31
+        mail_datetime = datetime.datetime(int(mail_time[0:4]), int(mail_time[5:7]), int(mail_time[8:10]),
+                                          int(mail_time[11:13]), int(mail_time[14:16]), int(mail_time[17:19]))
+        postids.append((mail.attrs['data-itemid'], mail_datetime))
+    return postids

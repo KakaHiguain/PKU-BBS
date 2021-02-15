@@ -103,8 +103,8 @@ class BDWM:
         page_url = self._get_action_url('mail-read', postid=postid)
         return self._get_page_content(page_url)
 
-    def get_mail_list_page(self):
-        page_url = self._get_action_url('mail')
+    def get_mail_content(self, page: int):
+        page_url = self._get_action_url('mail', page=page)
         return self._get_page_content(page_url)
 
     # Functions for getting action response.
