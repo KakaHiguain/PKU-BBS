@@ -30,9 +30,9 @@ def main():
 
 @main.command()
 @click.option('--id', required=True, help='Your BDWM ID')
-@click.option('--password', help='The password of your BDWM ID')
-@click.option('--password-file', help='The file containing your password')
-@click.option('--board', required=True, help='The name of the board you want to post to')
+@click.option('-p', '--password', help='The password of your BDWM ID')
+@click.option('-pf', '--password-file', help='The file containing your password')
+@click.option('-b', '--board', required=True, help='The name of the board you want to post to')
 @click.option('--title', required=True, help='The post title')
 @click.option('--content', help='The post content')
 @click.option('--content-file', help='The file containing the post content')
@@ -47,9 +47,9 @@ def post(id, password, password_file, board, title, content, content_file, no_re
 
 @main.command()
 @click.option('--id', required=True, help='Your BDWM ID')
-@click.option('--password', help='The password of your BDWM ID')
-@click.option('--password-file', help='The file containing your password')
-@click.option('--board', required=True, help='The name of the board you want to post to')
+@click.option('-p', '--password', help='The password of your BDWM ID')
+@click.option('-pf', '--password-file', help='The file containing your password')
+@click.option('-b', '--board', required=True, help='The name of the board you want to post to')
 @click.option('--postid', required=True, help='The ID of the post you want to edit')
 @click.option('--title', required=True, help='The post title')
 @click.option('--content', help='The post content')
@@ -84,9 +84,9 @@ def _get_postid_list_from_internal_postids(bdwm, board, internal_postids) -> Lis
 
 @main.command()
 @click.option('--id', required=True, help='Your BDWM ID')
-@click.option('--password', help='The password of your BDWM ID')
-@click.option('--password-file', help='The file containing your password')
-@click.option('--board', required=True, help='The name of the board you want to import collection')
+@click.option('-p', '--password', help='The password of your BDWM ID')
+@click.option('-pf', '--password-file', help='The file containing your password')
+@click.option('-b', '--board', required=True, help='The name of the board you want to import collection')
 @click.option('--path', required=True, help='Collection path we see on the website')
 @click.option('--postids', help='The IDs of the post you want to collect, split by ","')
 @click.option('--in-postids', 'internal_postids',
@@ -117,9 +117,9 @@ def import_collection(id, password, password_file, board, path, postids, interna
 
 @main.command()
 @click.option('--id', required=True, help='Your BDWM ID')
-@click.option('--password', help='The password of your BDWM ID')
-@click.option('--password-file', help='The file containing your password')
-@click.option('--board', required=True, help='The name of the board you want to post to')
+@click.option('-p', '--password', help='The password of your BDWM ID')
+@click.option('-pf', '--password-file', help='The file containing your password')
+@click.option('-b', '--board', required=True, help='The name of the board you want to post to')
 # TODO: Add validation.
 @click.option('--start-datetime', required=True, help='The start date and time, YYYYMMDDHHMMSS')
 @click.option('--end-datetime', required=True, help='The end date and time, YYYYMMDDHHMMSS')

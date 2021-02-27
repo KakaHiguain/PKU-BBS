@@ -56,7 +56,7 @@ class BDWM:
 
     def _get_board_info(self, board_name, key) -> int:
         if board_name not in self._boards:
-            raise ValueError(bold_red('没有这个版面，或暂不支持这个版面'))
+            raise ValueError(bold_red('没有这个版面，或暂不支持这个版面: {}'.format(board_name)))
         return self._boards[board_name][key]
 
     def _get_action_url(self, action_name, **params):
