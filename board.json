@@ -36,5 +36,3156 @@
     "id": 779,
     "section": "0",
     "private": true
+  },
+  "HappyNewYear": {
+    "section": "0"
+  },
+  "2019nCoV": {
+    "section": "8"
+  },
+  "SIS": {
+    "section": "1"
+  },
+  "Arbitration": {
+    "section": "0"
+  },
+  "ClassicsReading": {
+    "section": "C"
+  },
+  "Forex": {
+    "section": "3"
+  },
+  "AGI": {
+    "section": "A"
+  },
+  "Harmonica": {
+    "section": "A"
+  },
+  "HscAssn": {
+    "section": "A"
+  },
+  "PKU_CC": {
+    "section": "F"
+  },
+  "PKU_CE": {
+    "section": "F"
+  },
+  "BDQN": {
+    "section": "B"
+  },
+  "PetsEden": {
+    "section": "6"
+  },
+  "LeslieCheung": {
+    "section": "6"
+  },
+  "DangPei": {
+    "section": "B"
+  },
+  "KOF": {
+    "section": "6"
+  },
+  "Deutsch": {
+    "section": "C"
+  },
+  "XinSheng": {
+    "section": "B"
+  },
+  "EnglishStar": {
+    "section": "B"
+  },
+  "MBEdt": {
+    "section": "0"
+  },
+  "ShaanXi": {
+    "section": "2"
+  },
+  "TrafficTicket": {
+    "section": "8"
+  },
+  "MCPA": {
+    "section": "A"
+  },
+  "SPS": {
+    "section": "1"
+  },
+  "IntroEcology": {
+    "section": "C"
+  },
+  "Virus_Security": {
+    "section": "4"
+  },
+  "RCPER": {
+    "section": "C"
+  },
+  "SPH": {
+    "section": "1"
+  },
+  "Academics": {
+    "section": "3"
+  },
+  "PKUQUYI": {
+    "section": "A"
+  },
+  "FiveMillion": {
+    "section": "G"
+  },
+  "FormulaOneZone": {
+    "section": "9"
+  },
+  "ShanXi": {
+    "section": "2"
+  },
+  "kzone": {
+    "section": "6"
+  },
+  "Brazil2014": {
+    "section": "9"
+  },
+  "BJ4HS": {
+    "section": "G"
+  },
+  "FIR": {
+    "section": "6"
+  },
+  "ACM_Algo": {
+    "section": "4"
+  },
+  "GIS": {
+    "section": "4"
+  },
+  "HuNan": {
+    "section": "2"
+  },
+  "Assoc_B": {
+    "section": "A"
+  },
+  "Assoc_A": {
+    "section": "A"
+  },
+  "FCBarcelona": {
+    "section": "9"
+  },
+  "Admin6_Bla": {
+    "section": "6"
+  },
+  "FruitFruit": {
+    "section": "G"
+  },
+  "Translation": {
+    "section": "A"
+  },
+  "diary": {
+    "section": "7"
+  },
+  "BDXK": {
+    "section": "B"
+  },
+  "BNDS": {
+    "section": "G"
+  },
+  "Military": {
+    "section": "3"
+  },
+  "CCAC": {
+    "section": "A"
+  },
+  "Volunteers": {
+    "section": "B"
+  },
+  "BibiChou": {
+    "section": "6"
+  },
+  "standflower": {
+    "section": "G"
+  },
+  "CDA": {
+    "section": "A"
+  },
+  "PKUSIFEA": {
+    "section": "A"
+  },
+  "SICA": {
+    "section": "A"
+  },
+  "PKUZDS": {
+    "section": "3"
+  },
+  "PKUTA": {
+    "section": "A"
+  },
+  "Coupon": {
+    "section": "8"
+  },
+  "AminiEden": {
+    "section": "G"
+  },
+  "SocialNetwork": {
+    "section": "4"
+  },
+  "SCS": {
+    "section": "C"
+  },
+  "PKUHighSchool": {
+    "section": "1"
+  },
+  "FFE": {
+    "section": "1"
+  },
+  "PKUTV": {
+    "section": "B"
+  },
+  "AnalChem": {
+    "section": "C"
+  },
+  "WorldClassroom": {
+    "section": "C"
+  },
+  "PKU_3S": {
+    "section": "1"
+  },
+  "CMI": {
+    "section": "A"
+  },
+  "BuddhismCHN": {
+    "section": "C"
+  },
+  "leagueforum": {
+    "section": "B"
+  },
+  "LiaoNing": {
+    "section": "2"
+  },
+  "CIO_Forum": {
+    "section": "A"
+  },
+  "loveheart": {
+    "section": "A"
+  },
+  "Romance": {
+    "section": "5"
+  },
+  "PersonalCorpus": {
+    "section": "0"
+  },
+  "Admin2": {
+    "section": "0"
+  },
+  "Admin5": {
+    "section": "0"
+  },
+  "Admin4": {
+    "section": "0"
+  },
+  "PKU_OSFA": {
+    "section": "F"
+  },
+  "Admin6": {
+    "section": "0"
+  },
+  "Admin9": {
+    "section": "0"
+  },
+  "Admin8": {
+    "section": "0"
+  },
+  "PCA": {
+    "section": "A"
+  },
+  "HuXiangCulture": {
+    "section": "A"
+  },
+  "HongqiOnline": {
+    "section": "B"
+  },
+  "Modern_China": {
+    "section": "3"
+  },
+  "Associations": {
+    "section": "A"
+  },
+  "PKUPA": {
+    "section": "B"
+  },
+  "PKUMOOC": {
+    "section": "C"
+  },
+  "M_M": {
+    "section": "C"
+  },
+  "LSA": {
+    "section": "A"
+  },
+  "Postcard": {
+    "section": "6"
+  },
+  "PKU_Feedback": {
+    "section": "F"
+  },
+  "ChineseEconomy": {
+    "section": "C"
+  },
+  "bbslists": {
+    "section": "0"
+  },
+  "LSU": {
+    "section": "B"
+  },
+  "FilmReview": {
+    "section": "C"
+  },
+  "PreMed": {
+    "section": "1"
+  },
+  "Olydreams": {
+    "section": "B"
+  },
+  "CSXH": {
+    "section": "A"
+  },
+  "Complain": {
+    "section": "0"
+  },
+  "NTL": {
+    "section": "B"
+  },
+  "BackstreetBack": {
+    "section": "6"
+  },
+  "xcdyb": {
+    "section": "B"
+  },
+  "Dream": {
+    "section": "7"
+  },
+  "Typography": {
+    "section": "5"
+  },
+  "Departments": {
+    "section": "B"
+  },
+  "dance_company": {
+    "section": "A"
+  },
+  "JayChou": {
+    "section": "6"
+  },
+  "WUXIE": {
+    "section": "A"
+  },
+  "GCHEM": {
+    "section": "C"
+  },
+  "LITnMovie": {
+    "section": "C"
+  },
+  "ZongJiaoZheXue": {
+    "section": "A"
+  },
+  "JapanResearch": {
+    "section": "3"
+  },
+  "PUMA": {
+    "section": "A"
+  },
+  "Chinese": {
+    "section": "1"
+  },
+  "Admin1_lobby": {
+    "section": "1"
+  },
+  "Kendo": {
+    "section": "A"
+  },
+  "HSCEA": {
+    "section": "A"
+  },
+  "AncientEgypt": {
+    "section": "C"
+  },
+  "hokey": {
+    "section": "G"
+  },
+  "FoxForum": {
+    "section": "A"
+  },
+  "VisualBible": {
+    "section": "C"
+  },
+  "NationalFlagTeam": {
+    "section": "B"
+  },
+  "HLC": {
+    "section": "C"
+  },
+  "Architecture": {
+    "section": "C"
+  },
+  "FootballWorld": {
+    "section": "9"
+  },
+  "TypeMoon": {
+    "section": "G"
+  },
+  "SMS": {
+    "section": "1"
+  },
+  "Languages": {
+    "section": "5"
+  },
+  "FinalFantasy": {
+    "section": "6"
+  },
+  "PKU_ShiJia": {
+    "section": "B"
+  },
+  "Health": {
+    "section": "3"
+  },
+  "Reader": {
+    "section": "5"
+  },
+  "MaJiang": {
+    "section": "9"
+  },
+  "culturestudy": {
+    "section": "C"
+  },
+  "Piano": {
+    "section": "A"
+  },
+  "DaoXue": {
+    "section": "A"
+  },
+  "DREAMS": {
+    "section": "A"
+  },
+  "STWT": {
+    "section": "B"
+  },
+  "NewAgemusic": {
+    "section": "6"
+  },
+  "lottery": {
+    "section": "6"
+  },
+  "Neverland": {
+    "section": "G"
+  },
+  "Admin9_Bar": {
+    "section": "9"
+  },
+  "TFPU": {
+    "section": "A"
+  },
+  "Mentality": {
+    "section": "3"
+  },
+  "BeiDaZhiFeng": {
+    "section": "B"
+  },
+  "tzy_service": {
+    "section": "A"
+  },
+  "PKUYND": {
+    "section": "A"
+  },
+  "atmos": {
+    "section": "C"
+  },
+  "Baseball": {
+    "section": "9"
+  },
+  "LifeEducation": {
+    "section": "C"
+  },
+  "Bioinformatics": {
+    "section": "C"
+  },
+  "PG_Club": {
+    "section": "B"
+  },
+  "QLCA": {
+    "section": "A"
+  },
+  "ChineseArt": {
+    "section": "C"
+  },
+  "Tobacco": {
+    "section": "5"
+  },
+  "Career": {
+    "section": "8"
+  },
+  "New_Board": {
+    "section": "0"
+  },
+  "ASUSE": {
+    "section": "A"
+  },
+  "Volleyball": {
+    "section": "9"
+  },
+  "Teams": {
+    "section": "0"
+  },
+  "JUMP": {
+    "section": "6"
+  },
+  "Services": {
+    "section": "0"
+  },
+  "HipHop": {
+    "section": "A"
+  },
+  "sysreport": {
+    "section": "0"
+  },
+  "OBCase": {
+    "section": "C"
+  },
+  "PopMusic": {
+    "section": "6"
+  },
+  "DigitalWorld": {
+    "section": "4"
+  },
+  "Muthos": {
+    "section": "5"
+  },
+  "Inter": {
+    "section": "9"
+  },
+  "PKUFA": {
+    "section": "A"
+  },
+  "TestOne": {
+    "section": "0"
+  },
+  "SESS": {
+    "section": "1"
+  },
+  "WBIA": {
+    "section": "C"
+  },
+  "Actuary": {
+    "section": "3"
+  },
+  "SpaceExp": {
+    "section": "C"
+  },
+  "AcappellaPKU": {
+    "section": "A"
+  },
+  "Odyssey": {
+    "section": "G"
+  },
+  "ECCA": {
+    "section": "A"
+  },
+  "OriginalFire": {
+    "section": "A"
+  },
+  "SL": {
+    "section": "1"
+  },
+  "XiangSheng": {
+    "section": "5"
+  },
+  "SG": {
+    "section": "1"
+  },
+  "KXTS": {
+    "section": "C"
+  },
+  "FishLeong": {
+    "section": "6"
+  },
+  "LostFound": {
+    "section": "8"
+  },
+  "StudentUnion": {
+    "section": "B"
+  },
+  "Marxist": {
+    "section": "A"
+  },
+  "FaithinGlob": {
+    "section": "C"
+  },
+  "Rubik": {
+    "section": "A"
+  },
+  "ichess": {
+    "section": "A"
+  },
+  "BoardManager": {
+    "section": "0"
+  },
+  "Orchestra": {
+    "section": "A"
+  },
+  "Arsenal": {
+    "section": "9"
+  },
+  "Kindergarten": {
+    "section": "B"
+  },
+  "PKU_EnNews": {
+    "section": "B"
+  },
+  "Relatives": {
+    "section": "7"
+  },
+  "CAH": {
+    "section": "C"
+  },
+  "violin": {
+    "section": "A"
+  },
+  "PKU_PE": {
+    "section": "F"
+  },
+  "Announce": {
+    "section": "0"
+  },
+  "Marxism": {
+    "section": "1"
+  },
+  "StarCraft": {
+    "section": "6"
+  },
+  "SSM": {
+    "section": "1"
+  },
+  "CCERCLUB": {
+    "section": "A"
+  },
+  "HSCFA": {
+    "section": "A"
+  },
+  "Ecosociety": {
+    "section": "3"
+  },
+  "PKUPractice": {
+    "section": "B"
+  },
+  "RDFZ": {
+    "section": "G"
+  },
+  "Geophysics": {
+    "section": "1"
+  },
+  "GuiZhou": {
+    "section": "2"
+  },
+  "Mavis": {
+    "section": "6"
+  },
+  "NUDT": {
+    "section": "2"
+  },
+  "Friends": {
+    "section": "6"
+  },
+  "Ghost": {
+    "section": "6"
+  },
+  "BeiJing": {
+    "section": "2"
+  },
+  "Philo": {
+    "section": "1"
+  },
+  "AJCD": {
+    "section": "A"
+  },
+  "PKUSZGraduate": {
+    "section": "1"
+  },
+  "YuanMingYuan": {
+    "section": "1"
+  },
+  "Oversea": {
+    "section": "8"
+  },
+  "DigitalMusic": {
+    "section": "6"
+  },
+  "PKUBA": {
+    "section": "A"
+  },
+  "AJCC": {
+    "section": "A"
+  },
+  "HSCRUNNING": {
+    "section": "A"
+  },
+  "CSArch": {
+    "section": "4"
+  },
+  "Accordion": {
+    "section": "A"
+  },
+  "London2012": {
+    "section": "9"
+  },
+  "Model": {
+    "section": "6"
+  },
+  "TuanGou": {
+    "section": "8"
+  },
+  "BayernMunchen": {
+    "section": "9"
+  },
+  "BoC": {
+    "section": "A"
+  },
+  "Shin": {
+    "section": "N"
+  },
+  "Apple": {
+    "section": "4"
+  },
+  "CFH": {
+    "section": "C"
+  },
+  "PGA": {
+    "section": "A"
+  },
+  "NCU": {
+    "section": "2"
+  },
+  "YOCSEF_GS": {
+    "section": "A"
+  },
+  "HSCABR": {
+    "section": "A"
+  },
+  "Meteo": {
+    "section": "3"
+  },
+  "Radio": {
+    "section": "6"
+  },
+  "Linux": {
+    "section": "4"
+  },
+  "Politics": {
+    "section": "3"
+  },
+  "Beyond": {
+    "section": "6"
+  },
+  "wine": {
+    "section": "6"
+  },
+  "SUforum": {
+    "section": "B"
+  },
+  "JiangSu": {
+    "section": "2"
+  },
+  "ExceptNA": {
+    "section": "8"
+  },
+  "RuXing": {
+    "section": "A"
+  },
+  "PMVol": {
+    "section": "B"
+  },
+  "PECSA": {
+    "section": "B"
+  },
+  "GeoCultures": {
+    "section": "C"
+  },
+  "ILSAPKU": {
+    "section": "A"
+  },
+  "DiaNat": {
+    "section": "C"
+  },
+  "SaintSeiya": {
+    "section": "6"
+  },
+  "ProfCourses": {
+    "section": "C"
+  },
+  "CaoLanZi": {
+    "section": "1"
+  },
+  "Urban": {
+    "section": "1"
+  },
+  "AOE": {
+    "section": "6"
+  },
+  "Feeling": {
+    "section": "7"
+  },
+  "PRA": {
+    "section": "A"
+  },
+  "ADer": {
+    "section": "A"
+  },
+  "NetResources": {
+    "section": "4"
+  },
+  "YanQingbu": {
+    "section": "B"
+  },
+  "IPDA": {
+    "section": "A"
+  },
+  "Philosophy": {
+    "section": "3"
+  },
+  "Anthropology": {
+    "section": "C"
+  },
+  "HSRH": {
+    "section": "C"
+  },
+  "PMA": {
+    "section": "3"
+  },
+  "Freshman": {
+    "section": "8"
+  },
+  "IIMA": {
+    "section": "A"
+  },
+  "Guanjun2005": {
+    "section": "G"
+  },
+  "WMFund": {
+    "section": "0"
+  },
+  "GDA": {
+    "section": "A"
+  },
+  "PUNMA": {
+    "section": "A"
+  },
+  "BBSdata": {
+    "section": "0"
+  },
+  "IntEcon": {
+    "section": "C"
+  },
+  "ShouYu": {
+    "section": "A"
+  },
+  "ChongQing": {
+    "section": "2"
+  },
+  "Mechanics": {
+    "section": "1"
+  },
+  "SDA": {
+    "section": "A"
+  },
+  "YOGA": {
+    "section": "A"
+  },
+  "BeWithYou": {
+    "section": "8"
+  },
+  "Indie": {
+    "section": "G"
+  },
+  "RegionalEcon": {
+    "section": "C"
+  },
+  "warner_class": {
+    "section": "C"
+  },
+  "OVSLS": {
+    "section": "G"
+  },
+  "SFL": {
+    "section": "1"
+  },
+  "LifeScience": {
+    "section": "1"
+  },
+  "Warcraft": {
+    "section": "6"
+  },
+  "Thanks": {
+    "section": "7"
+  },
+  "HSC_CFAN": {
+    "section": "G"
+  },
+  "SanJinCulture": {
+    "section": "A"
+  },
+  "HeiLongJiang": {
+    "section": "2"
+  },
+  "JaneZhang": {
+    "section": "6"
+  },
+  "FuJian": {
+    "section": "2"
+  },
+  "WenYan": {
+    "section": "5"
+  },
+  "Novoland": {
+    "section": "5"
+  },
+  "AoA": {
+    "section": "1"
+  },
+  "Auditory": {
+    "section": "1"
+  },
+  "Dortmund": {
+    "section": "9"
+  },
+  "WeClub": {
+    "section": "A"
+  },
+  "SkateBoarding": {
+    "section": "9"
+  },
+  "Anniversary": {
+    "section": "0"
+  },
+  "SPE": {
+    "section": "A"
+  },
+  "CzechHero": {
+    "section": "9"
+  },
+  "PKUYAFA": {
+    "section": "A"
+  },
+  "Ocean": {
+    "section": "A"
+  },
+  "PAPU": {
+    "section": "A"
+  },
+  "AETVP": {
+    "section": "C"
+  },
+  "Little_Game": {
+    "section": "6"
+  },
+  "CampusLife": {
+    "section": "8"
+  },
+  "Admin7_Bar": {
+    "section": "7"
+  },
+  "Zhuangzi": {
+    "section": "C"
+  },
+  "PKU_SAD": {
+    "section": "F"
+  },
+  "DMB": {
+    "section": "C"
+  },
+  "PKU_OMusic": {
+    "section": "5"
+  },
+  "WMPlatform": {
+    "section": "0"
+  },
+  "PKU": {
+    "section": "1"
+  },
+  "phychem": {
+    "section": "C"
+  },
+  "code_report": {
+    "section": "0"
+  },
+  "STL": {
+    "section": "1"
+  },
+  "Job": {
+    "section": "8"
+  },
+  "XiYou": {
+    "section": "5"
+  },
+  "RelicFans": {
+    "section": "A"
+  },
+  "JNFQ": {
+    "section": "5"
+  },
+  "Astronomy": {
+    "section": "3"
+  },
+  "jingwu": {
+    "section": "A"
+  },
+  "EM": {
+    "section": "C"
+  },
+  "CanteenDorm": {
+    "section": "1"
+  },
+  "Floorball": {
+    "section": "A"
+  },
+  "LangSong": {
+    "section": "A"
+  },
+  "PKU_Suggest": {
+    "section": "F"
+  },
+  "WOW": {
+    "section": "N"
+  },
+  "XinWenZX": {
+    "section": "B"
+  },
+  "Reminiscence": {
+    "section": "G"
+  },
+  "pub": {
+    "section": "6"
+  },
+  "IT": {
+    "section": "4"
+  },
+  "Drama": {
+    "section": "5"
+  },
+  "cntest": {
+    "section": "0"
+  },
+  "SHE": {
+    "section": "6"
+  },
+  "Circuit": {
+    "section": "C"
+  },
+  "MoonlightBay": {
+    "section": "G"
+  },
+  "GuoXue": {
+    "section": "3"
+  },
+  "IBMThinkPad": {
+    "section": "4"
+  },
+  "EEBCUS": {
+    "section": "B"
+  },
+  "grsxz": {
+    "section": "A"
+  },
+  "IntroEQ": {
+    "section": "C"
+  },
+  "GSMRL": {
+    "section": "B"
+  },
+  "Stefanie": {
+    "section": "6"
+  },
+  "SST": {
+    "section": "B"
+  },
+  "OurEileen": {
+    "section": "5"
+  },
+  "Fairytales": {
+    "section": "5"
+  },
+  "OPETech": {
+    "section": "3"
+  },
+  "CACA": {
+    "section": "A"
+  },
+  "Comic": {
+    "section": "6"
+  },
+  "UnivUnion": {
+    "section": "0"
+  },
+  "Econometrics": {
+    "section": "C"
+  },
+  "JapaneseArt": {
+    "section": "C"
+  },
+  "NatureConserv": {
+    "section": "C"
+  },
+  "GuQin": {
+    "section": "A"
+  },
+  "Humanities": {
+    "section": "5"
+  },
+  "PKUFMU": {
+    "section": "A"
+  },
+  "Aixinshe": {
+    "section": "A"
+  },
+  "AdvancedEdu": {
+    "section": "8"
+  },
+  "lostangel": {
+    "section": "A"
+  },
+  "MUD": {
+    "section": "6"
+  },
+  "TableTennis": {
+    "section": "9"
+  },
+  "Countryroad": {
+    "section": "7"
+  },
+  "EduInfo": {
+    "section": "8"
+  },
+  "PKULife": {
+    "section": "1"
+  },
+  "GXue": {
+    "section": "A"
+  },
+  "vote": {
+    "section": "0"
+  },
+  "LiverpoolFC": {
+    "section": "9"
+  },
+  "IEEEPKU": {
+    "section": "A"
+  },
+  "HELP": {
+    "section": "C"
+  },
+  "AiGuoJunYou": {
+    "section": "A"
+  },
+  "SLS": {
+    "section": "B"
+  },
+  "ChineseCulture": {
+    "section": "C"
+  },
+  "notepad": {
+    "section": "0"
+  },
+  "WuTaiJi": {
+    "section": "A"
+  },
+  "HGC": {
+    "section": "C"
+  },
+  "ccdra": {
+    "section": "A"
+  },
+  "Notebook": {
+    "section": "4"
+  },
+  "MASP": {
+    "section": "A"
+  },
+  "RPKU": {
+    "section": "B"
+  },
+  "SFAPU": {
+    "section": "A"
+  },
+  "JiangXi": {
+    "section": "2"
+  },
+  "pku_129": {
+    "section": "B"
+  },
+  "ShanDong": {
+    "section": "2"
+  },
+  "CritiWriting": {
+    "section": "C"
+  },
+  "IME": {
+    "section": "1"
+  },
+  "ColorShow": {
+    "section": "0"
+  },
+  "GameTheory": {
+    "section": "C"
+  },
+  "IMM": {
+    "section": "1"
+  },
+  "SoraNoKiseki": {
+    "section": "6"
+  },
+  "JapaneseMinor": {
+    "section": "C"
+  },
+  "BJ_Culture": {
+    "section": "5"
+  },
+  "TheOnlyTruth": {
+    "section": "G"
+  },
+  "GeneralGeology": {
+    "section": "C"
+  },
+  "BDSJC": {
+    "section": "1"
+  },
+  "France": {
+    "section": "9"
+  },
+  "EUS": {
+    "section": "A"
+  },
+  "History": {
+    "section": "3"
+  },
+  "Admin1": {
+    "section": "0"
+  },
+  "Love": {
+    "section": "7"
+  },
+  "TengriTala": {
+    "section": "A"
+  },
+  "WorldHeritage": {
+    "section": "C"
+  },
+  "losefat": {
+    "section": "6"
+  },
+  "Stanford_ALC": {
+    "section": "B"
+  },
+  "HuBei": {
+    "section": "2"
+  },
+  "ArtHistory": {
+    "section": "C"
+  },
+  "CPGP": {
+    "section": "C"
+  },
+  "WorldLiterary": {
+    "section": "5"
+  },
+  "Managepsy": {
+    "section": "C"
+  },
+  "wusi": {
+    "section": "A"
+  },
+  "OMW": {
+    "section": "C"
+  },
+  "ITP": {
+    "section": "C"
+  },
+  "Affairs": {
+    "section": "F"
+  },
+  "DMC": {
+    "section": "C"
+  },
+  "WanLiu": {
+    "section": "1"
+  },
+  "HXYG": {
+    "section": "5"
+  },
+  "Automobile": {
+    "section": "6"
+  },
+  "GengDu": {
+    "section": "A"
+  },
+  "Billiards": {
+    "section": "9"
+  },
+  "SWD": {
+    "section": "6"
+  },
+  "PhD": {
+    "section": "1"
+  },
+  "Regions": {
+    "section": "2"
+  },
+  "CADA": {
+    "section": "A"
+  },
+  "Admin2_Discuss": {
+    "section": "2"
+  },
+  "DY": {
+    "section": "G"
+  },
+  "DV": {
+    "section": "N"
+  },
+  "Counterculture": {
+    "section": "5"
+  },
+  "PKUCOE": {
+    "section": "1"
+  },
+  "EnglishWorld": {
+    "section": "3"
+  },
+  "EduLDA": {
+    "section": "A"
+  },
+  "PKU_JiangTan": {
+    "section": "A"
+  },
+  "Food": {
+    "section": "6"
+  },
+  "WellBeing": {
+    "section": "C"
+  },
+  "Badminton": {
+    "section": "9"
+  },
+  "CStrike": {
+    "section": "6"
+  },
+  "MusicTheory": {
+    "section": "C"
+  },
+  "POA": {
+    "section": "A"
+  },
+  "ZYXS": {
+    "section": "A"
+  },
+  "Literatures": {
+    "section": "5"
+  },
+  "KillerGame": {
+    "section": "6"
+  },
+  "Pingtan": {
+    "section": "5"
+  },
+  "pianopiano": {
+    "section": "C"
+  },
+  "TeacherStudent": {
+    "section": "7"
+  },
+  "Bourgeoisie": {
+    "section": "G"
+  },
+  "SLP": {
+    "section": "3"
+  },
+  "Chimusic": {
+    "section": "5"
+  },
+  "Communications": {
+    "section": "C"
+  },
+  "SpanishStudy": {
+    "section": "C"
+  },
+  "Dubbing": {
+    "section": "5"
+  },
+  "Advertising": {
+    "section": "C"
+  },
+  "Logic": {
+    "section": "C"
+  },
+  "ACJC": {
+    "section": "A"
+  },
+  "FYSN": {
+    "section": "G"
+  },
+  "PKUScience": {
+    "section": "1"
+  },
+  "Bridge": {
+    "section": "9"
+  },
+  "MusicGame": {
+    "section": "6"
+  },
+  "Google": {
+    "section": "4"
+  },
+  "AnHui": {
+    "section": "2"
+  },
+  "ADAgent": {
+    "section": "8"
+  },
+  "PKU_Announce": {
+    "section": "F"
+  },
+  "AbnormalPSY": {
+    "section": "C"
+  },
+  "UrgentMeet": {
+    "section": "3"
+  },
+  "PHBS": {
+    "section": "1"
+  },
+  "Horoscope": {
+    "section": "5"
+  },
+  "MCC": {
+    "section": "B"
+  },
+  "Green_hut": {
+    "section": "6"
+  },
+  "Single": {
+    "section": "7"
+  },
+  "Maze": {
+    "section": "4"
+  },
+  "BeautyMarket": {
+    "section": "8"
+  },
+  "Islam": {
+    "section": "5"
+  },
+  "Assoc_H": {
+    "section": "A"
+  },
+  "Renju": {
+    "section": "9"
+  },
+  "Adolescence": {
+    "section": "C"
+  },
+  "ICST": {
+    "section": "1"
+  },
+  "Greenlife": {
+    "section": "A"
+  },
+  "MengTingWei": {
+    "section": "N"
+  },
+  "BaoYan": {
+    "section": "8"
+  },
+  "Assoc_F": {
+    "section": "A"
+  },
+  "Character": {
+    "section": "5"
+  },
+  "NingXia": {
+    "section": "2"
+  },
+  "PAC": {
+    "section": "A"
+  },
+  "Yueju": {
+    "section": "5"
+  },
+  "LiveBar": {
+    "section": "6"
+  },
+  "Innovation": {
+    "section": "8"
+  },
+  "StoneStory": {
+    "section": "5"
+  },
+  "LegalChina": {
+    "section": "C"
+  },
+  "HSC": {
+    "section": "1"
+  },
+  "WinterSunshine": {
+    "section": "B"
+  },
+  "Music_box": {
+    "section": "7"
+  },
+  "EnvirEthics": {
+    "section": "C"
+  },
+  "GSMer_Club": {
+    "section": "B"
+  },
+  "Game": {
+    "section": "6"
+  },
+  "Hogwarts": {
+    "section": "6"
+  },
+  "Traffic": {
+    "section": "8"
+  },
+  "OVTS": {
+    "section": "B"
+  },
+  "CampusInfo": {
+    "section": "0"
+  },
+  "AAIS": {
+    "section": "1"
+  },
+  "Wakin": {
+    "section": "6"
+  },
+  "HTCM": {
+    "section": "C"
+  },
+  "DCS": {
+    "section": "B"
+  },
+  "zts": {
+    "section": "G"
+  },
+  "PKUEECS": {
+    "section": "1"
+  },
+  "PKUCourses": {
+    "section": "C"
+  },
+  "CALA": {
+    "section": "1"
+  },
+  "Magic": {
+    "section": "A"
+  },
+  "OcciMusic": {
+    "section": "6"
+  },
+  "DMIS": {
+    "section": "C"
+  },
+  "THU": {
+    "section": "2"
+  },
+  "BNU": {
+    "section": "2"
+  },
+  "GeneralEdu_E": {
+    "section": "C"
+  },
+  "Fitness": {
+    "section": "9"
+  },
+  "JiaJiao": {
+    "section": "8"
+  },
+  "HeGou": {
+    "section": "8"
+  },
+  "IAS": {
+    "section": "C"
+  },
+  "Swimming": {
+    "section": "9"
+  },
+  "Riddle": {
+    "section": "6"
+  },
+  "PKUPI": {
+    "section": "A"
+  },
+  "GeneralEdu_F": {
+    "section": "C"
+  },
+  "Office": {
+    "section": "0"
+  },
+  "ShangHai": {
+    "section": "2"
+  },
+  "NIE": {
+    "section": "C"
+  },
+  "DalianFC": {
+    "section": "G"
+  },
+  "SecondBook": {
+    "section": "8"
+  },
+  "PRCEH": {
+    "section": "C"
+  },
+  "YangTaiChi": {
+    "section": "A"
+  },
+  "House": {
+    "section": "8"
+  },
+  "DMA": {
+    "section": "C"
+  },
+  "Job_Post": {
+    "section": "8"
+  },
+  "HaiNan": {
+    "section": "2"
+  },
+  "Networking": {
+    "section": "4"
+  },
+  "VBVC": {
+    "section": "A"
+  },
+  "BaiduClub": {
+    "section": "A"
+  },
+  "DMM": {
+    "section": "C"
+  },
+  "ACJC_Aikido": {
+    "section": "A"
+  },
+  "Christianity": {
+    "section": "5"
+  },
+  "DMP": {
+    "section": "C"
+  },
+  "SodaGreen": {
+    "section": "6"
+  },
+  "Xianjian": {
+    "section": "6"
+  },
+  "ZhongGuanYuan": {
+    "section": "1"
+  },
+  "PKU_EF": {
+    "section": "F"
+  },
+  "PKULibrary": {
+    "section": "1"
+  },
+  "GuangDong": {
+    "section": "2"
+  },
+  "Broadcasting": {
+    "section": "C"
+  },
+  "Biology": {
+    "section": "3"
+  },
+  "AntiLaMacia": {
+    "section": "G"
+  },
+  "Shopping": {
+    "section": "6"
+  },
+  "HSCINFO": {
+    "section": "1"
+  },
+  "PsyStat": {
+    "section": "C"
+  },
+  "Wisdom": {
+    "section": "5"
+  },
+  "Water": {
+    "section": "7"
+  },
+  "PhysicsReview": {
+    "section": "3"
+  },
+  "PA": {
+    "section": "A"
+  },
+  "cssm": {
+    "section": "C"
+  },
+  "Folklore": {
+    "section": "C"
+  },
+  "PE": {
+    "section": "C"
+  },
+  "CCME": {
+    "section": "1"
+  },
+  "XiYuCulture": {
+    "section": "A"
+  },
+  "LogicCriThink": {
+    "section": "C"
+  },
+  "GeneralEdu_A": {
+    "section": "C"
+  },
+  "GameOnBoard": {
+    "section": "6"
+  },
+  "GeneralEdu_C": {
+    "section": "C"
+  },
+  "GeneralEdu_B": {
+    "section": "C"
+  },
+  "Info": {
+    "section": "8"
+  },
+  "Bible": {
+    "section": "C"
+  },
+  "Programming": {
+    "section": "4"
+  },
+  "DotaClub": {
+    "section": "G"
+  },
+  "FolkloreClub": {
+    "section": "A"
+  },
+  "SANGUO": {
+    "section": "5"
+  },
+  "Holland": {
+    "section": "9"
+  },
+  "Temporary_BM": {
+    "section": "0"
+  },
+  "JLU": {
+    "section": "2"
+  },
+  "NuclearTec": {
+    "section": "C"
+  },
+  "PKU_OOF": {
+    "section": "F"
+  },
+  "Collectors": {
+    "section": "6"
+  },
+  "HCC": {
+    "section": "C"
+  },
+  "Dance": {
+    "section": "6"
+  },
+  "Indiapac": {
+    "section": "C"
+  },
+  "SAPA": {
+    "section": "A"
+  },
+  "somewhere": {
+    "section": "G"
+  },
+  "Computer": {
+    "section": "4"
+  },
+  "FreeRunning": {
+    "section": "9"
+  },
+  "Biography": {
+    "section": "C"
+  },
+  "JunXun": {
+    "section": "8"
+  },
+  "MentalityEdu": {
+    "section": "B"
+  },
+  "CulturalChina": {
+    "section": "C"
+  },
+  "FFHome": {
+    "section": "G"
+  },
+  "SecondHand": {
+    "section": "8"
+  },
+  "TIC": {
+    "section": "A"
+  },
+  "Pictures": {
+    "section": "6"
+  },
+  "Travel": {
+    "section": "6"
+  },
+  "AiYuanClub": {
+    "section": "G"
+  },
+  "Doraemon": {
+    "section": "G"
+  },
+  "PKUInfoEng": {
+    "section": "1"
+  },
+  "BeiShe": {
+    "section": "A"
+  },
+  "ShowTicket": {
+    "section": "8"
+  },
+  "HiFi": {
+    "section": "6"
+  },
+  "COE": {
+    "section": "1"
+  },
+  "Board": {
+    "section": "0"
+  },
+  "KoreanSalon": {
+    "section": "A"
+  },
+  "Sorry": {
+    "section": "7"
+  },
+  "AdminABC": {
+    "section": "0"
+  },
+  "LetsChat": {
+    "section": "G"
+  },
+  "BeiDaBei": {
+    "section": "B"
+  },
+  "Melancholy": {
+    "section": "7"
+  },
+  "Literature": {
+    "section": "5"
+  },
+  "Assembly": {
+    "section": "4"
+  },
+  "Beauty": {
+    "section": "6"
+  },
+  "Geology": {
+    "section": "1"
+  },
+  "Emprise": {
+    "section": "5"
+  },
+  "ASAP": {
+    "section": "A"
+  },
+  "DoItForYou": {
+    "section": "0"
+  },
+  "PopStars": {
+    "section": "6"
+  },
+  "Dentist": {
+    "section": "3"
+  },
+  "ManUtd": {
+    "section": "9"
+  },
+  "FofArt": {
+    "section": "C"
+  },
+  "NJU": {
+    "section": "2"
+  },
+  "Movie": {
+    "section": "6"
+  },
+  "Heroes": {
+    "section": "5"
+  },
+  "Guizhou_Culture": {
+    "section": "A"
+  },
+  "EECS": {
+    "section": "1"
+  },
+  "Detective": {
+    "section": "5"
+  },
+  "PUDA": {
+    "section": "A"
+  },
+  "HappyPavilion": {
+    "section": "G"
+  },
+  "CB": {
+    "section": "C"
+  },
+  "sunshine": {
+    "section": "A"
+  },
+  "CG": {
+    "section": "C"
+  },
+  "squash": {
+    "section": "A"
+  },
+  "Graduation": {
+    "section": "7"
+  },
+  "ForzaMilan": {
+    "section": "9"
+  },
+  "Economiclovers": {
+    "section": "A"
+  },
+  "Courses": {
+    "section": "8"
+  },
+  "Aesthetics": {
+    "section": "C"
+  },
+  "ArchUrban": {
+    "section": "A"
+  },
+  "PhotoView": {
+    "section": "6"
+  },
+  "SocialInfo": {
+    "section": "8"
+  },
+  "CS": {
+    "section": "1"
+  },
+  "CR": {
+    "section": "C"
+  },
+  "Admin9_Closed": {
+    "section": "9"
+  },
+  "Software": {
+    "section": "4"
+  },
+  "WisePark": {
+    "section": "1"
+  },
+  "Blog": {
+    "section": "0"
+  },
+  "MathTools": {
+    "section": "3"
+  },
+  "Assoc_G": {
+    "section": "A"
+  },
+  "AdminG": {
+    "section": "0"
+  },
+  "Assoc_E": {
+    "section": "A"
+  },
+  "Assoc_D": {
+    "section": "A"
+  },
+  "LeeHom": {
+    "section": "6"
+  },
+  "RUC": {
+    "section": "2"
+  },
+  "Assoc_I": {
+    "section": "A"
+  },
+  "HKCA": {
+    "section": "A"
+  },
+  "HappyLife": {
+    "section": "7"
+  },
+  "Karaoke": {
+    "section": "6"
+  },
+  "Culture": {
+    "section": "5"
+  },
+  "VolunteerHome": {
+    "section": "B"
+  },
+  "Futurama": {
+    "section": "G"
+  },
+  "HeNan": {
+    "section": "2"
+  },
+  "Englishwriting": {
+    "section": "3"
+  },
+  "Skiing": {
+    "section": "9"
+  },
+  "Kobe": {
+    "section": "9"
+  },
+  "ArtZone": {
+    "section": "5"
+  },
+  "GanSu": {
+    "section": "2"
+  },
+  "LifePsy": {
+    "section": "C"
+  },
+  "Basketball": {
+    "section": "9"
+  },
+  "MusicHistory": {
+    "section": "C"
+  },
+  "SysAid": {
+    "section": "0"
+  },
+  "Tennis": {
+    "section": "9"
+  },
+  "PKUHistory": {
+    "section": "1"
+  },
+  "PLATEAUDREAM": {
+    "section": "A"
+  },
+  "OlympicZone": {
+    "section": "B"
+  },
+  "DIY": {
+    "section": "4"
+  },
+  "HotFun": {
+    "section": "6"
+  },
+  "Mathematics": {
+    "section": "3"
+  },
+  "Valencia": {
+    "section": "9"
+  },
+  "Stock": {
+    "section": "3"
+  },
+  "PieBridge": {
+    "section": "7"
+  },
+  "SUHome": {
+    "section": "B"
+  },
+  "ASRA": {
+    "section": "A"
+  },
+  "NSD": {
+    "section": "1"
+  },
+  "WMHXS": {
+    "section": "A"
+  },
+  "Game_Factory": {
+    "section": "N"
+  },
+  "Greece_Rome": {
+    "section": "5"
+  },
+  "Lyriclub": {
+    "section": "G"
+  },
+  "PKU_OIR": {
+    "section": "F"
+  },
+  "FantasyWorld": {
+    "section": "6"
+  },
+  "CQB": {
+    "section": "1"
+  },
+  "PKUHSC": {
+    "section": "1"
+  },
+  "MoviePsy": {
+    "section": "C"
+  },
+  "MayDay": {
+    "section": "6"
+  },
+  "WAH": {
+    "section": "C"
+  },
+  "XLSZ": {
+    "section": "C"
+  },
+  "JCP": {
+    "section": "A"
+  },
+  "PKUSocialSci": {
+    "section": "1"
+  },
+  "PKUSESS": {
+    "section": "1"
+  },
+  "MCCA": {
+    "section": "A"
+  },
+  "CPlusPlus": {
+    "section": "4"
+  },
+  "XiDian": {
+    "section": "2"
+  },
+  "QingHai": {
+    "section": "2"
+  },
+  "XiZang": {
+    "section": "2"
+  },
+  "ManCity": {
+    "section": "9"
+  },
+  "Chorus": {
+    "section": "5"
+  },
+  "pkuveg": {
+    "section": "A"
+  },
+  "IM": {
+    "section": "1"
+  },
+  "Job_IT": {
+    "section": "8"
+  },
+  "CESE": {
+    "section": "1"
+  },
+  "MANYATTA": {
+    "section": "A"
+  },
+  "Physics": {
+    "section": "1"
+  },
+  "ID": {
+    "section": "5"
+  },
+  "Kaoyan": {
+    "section": "8"
+  },
+  "YeFu_Biology": {
+    "section": "C"
+  },
+  "MobileDigital": {
+    "section": "4"
+  },
+  "MarketInfo": {
+    "section": "8"
+  },
+  "PingShu": {
+    "section": "5"
+  },
+  "musicmusic": {
+    "section": "C"
+  },
+  "LinkinPark": {
+    "section": "6"
+  },
+  "PCIA": {
+    "section": "A"
+  },
+  "pkuwuxia": {
+    "section": "A"
+  },
+  "PKUHumanities": {
+    "section": "1"
+  },
+  "Girl": {
+    "section": "7"
+  },
+  "KangYong": {
+    "section": "N"
+  },
+  "musical": {
+    "section": "5"
+  },
+  "Astrology": {
+    "section": "6"
+  },
+  "DrumCircle": {
+    "section": "A"
+  },
+  "XSKC": {
+    "section": "B"
+  },
+  "SiChuan": {
+    "section": "2"
+  },
+  "PKU_SCC": {
+    "section": "F"
+  },
+  "GSE": {
+    "section": "1"
+  },
+  "Haixi": {
+    "section": "A"
+  },
+  "GeneralEdu_D": {
+    "section": "C"
+  },
+  "Argentina": {
+    "section": "9"
+  },
+  "GSM": {
+    "section": "1"
+  },
+  "DigitalArt": {
+    "section": "C"
+  },
+  "CCC": {
+    "section": "C"
+  },
+  "Brush_Art": {
+    "section": "A"
+  },
+  "War3Clan": {
+    "section": "G"
+  },
+  "BBSmail": {
+    "section": "0"
+  },
+  "pkpk": {
+    "section": "A"
+  },
+  "Admin9_Club": {
+    "section": "9"
+  },
+  "TeaYoga": {
+    "section": "A"
+  },
+  "PublicCourses": {
+    "section": "C"
+  },
+  "IWLM": {
+    "section": "C"
+  },
+  "GalaxyHeroes": {
+    "section": "5"
+  },
+  "Ethics": {
+    "section": "C"
+  },
+  "AngelaChang": {
+    "section": "6"
+  },
+  "Banquet": {
+    "section": "6"
+  },
+  "SocialPsy": {
+    "section": "C"
+  },
+  "ForeignLit": {
+    "section": "5"
+  },
+  "Assoc_C": {
+    "section": "A"
+  },
+  "rules": {
+    "section": "0"
+  },
+  "Joke": {
+    "section": "6"
+  },
+  "JingKun": {
+    "section": "5"
+  },
+  "FRIENDFAMILY": {
+    "section": "G"
+  },
+  "PKURELA": {
+    "section": "A"
+  },
+  "Juventus": {
+    "section": "9"
+  },
+  "Poems": {
+    "section": "5"
+  },
+  "ACDR": {
+    "section": "A"
+  },
+  "WMweibo": {
+    "section": "0"
+  },
+  "Life_Art": {
+    "section": "5"
+  },
+  "Daoyin_Neijing": {
+    "section": "C"
+  },
+  "MathPhyMethod": {
+    "section": "C"
+  },
+  "twxgx": {
+    "section": "B"
+  },
+  "Art": {
+    "section": "5"
+  },
+  "HSJCE": {
+    "section": "C"
+  },
+  "ETC": {
+    "section": "B"
+  },
+  "PKULeagueschool": {
+    "section": "B"
+  },
+  "Assoc_Others": {
+    "section": "A"
+  },
+  "ClassicalMusic": {
+    "section": "5"
+  },
+  "PKUER": {
+    "section": "7"
+  },
+  "NumberPark": {
+    "section": "G"
+  },
+  "Assyriology": {
+    "section": "C"
+  },
+  "Echo": {
+    "section": "5"
+  },
+  "DragonBoating": {
+    "section": "9"
+  },
+  "Conan": {
+    "section": "6"
+  },
+  "LordOfTheRings": {
+    "section": "6"
+  },
+  "SD": {
+    "section": "C"
+  },
+  "Thesis": {
+    "section": "3"
+  },
+  "AcademicInfo": {
+    "section": "3"
+  },
+  "TrendyLife": {
+    "section": "6"
+  },
+  "cnAdmin": {
+    "section": "0"
+  },
+  "LuXunStudies": {
+    "section": "5"
+  },
+  "HackingExposed": {
+    "section": "C"
+  },
+  "zhonghuajian": {
+    "section": "A"
+  },
+  "WangLian": {
+    "section": "C"
+  },
+  "sneaker": {
+    "section": "6"
+  },
+  "Management": {
+    "section": "C"
+  },
+  "Java": {
+    "section": "4"
+  },
+  "GuangXi": {
+    "section": "2"
+  },
+  "Entertainment": {
+    "section": "6"
+  },
+  "PKUInterDiscip": {
+    "section": "1"
+  },
+  "CheerChan": {
+    "section": "6"
+  },
+  "isac": {
+    "section": "C"
+  },
+  "Application": {
+    "section": "0"
+  },
+  "DotA": {
+    "section": "6"
+  },
+  "ITrade": {
+    "section": "C"
+  },
+  "Master": {
+    "section": "1"
+  },
+  "MediaZone": {
+    "section": "6"
+  },
+  "JiLin": {
+    "section": "2"
+  },
+  "Friend": {
+    "section": "7"
+  },
+  "FrancisNG": {
+    "section": "6"
+  },
+  "Coffee": {
+    "section": "6"
+  },
+  "GameEden": {
+    "section": "6"
+  },
+  "SportZone": {
+    "section": "9"
+  },
+  "zhijiangforum": {
+    "section": "A"
+  },
+  "Zillionaire": {
+    "section": "N"
+  },
+  "GoAbroad": {
+    "section": "8"
+  },
+  "PKUMUN": {
+    "section": "A"
+  },
+  "Blessing": {
+    "section": "7"
+  },
+  "NewBoards": {
+    "section": "N"
+  },
+  "Clubs": {
+    "section": "G"
+  },
+  "HK_MC_TW": {
+    "section": "8"
+  },
+  "Customs": {
+    "section": "5"
+  },
+  "PKUWeibo": {
+    "section": "B"
+  },
+  "WesternMusic": {
+    "section": "C"
+  },
+  "BDWMFinance": {
+    "section": "0"
+  },
+  "OSA": {
+    "section": "A"
+  },
+  "Aviation": {
+    "section": "3"
+  },
+  "iCamp": {
+    "section": "A"
+  },
+  "FayeWong": {
+    "section": "6"
+  },
+  "Boy": {
+    "section": "7"
+  },
+  "HeBei": {
+    "section": "2"
+  },
+  "GFJY": {
+    "section": "C"
+  },
+  "demography": {
+    "section": "1"
+  },
+  "TRA": {
+    "section": "A"
+  },
+  "CAPU": {
+    "section": "A"
+  },
+  "Economics": {
+    "section": "1"
+  },
+  "ARTLIFE": {
+    "section": "C"
+  },
+  "PKUAA_Japan": {
+    "section": "A"
+  },
+  "ICCLS": {
+    "section": "1"
+  },
+  "CareerPlanning": {
+    "section": "C"
+  },
+  "ECPM": {
+    "section": "C"
+  },
+  "Barracks": {
+    "section": "0"
+  },
+  "post": {
+    "section": "0"
+  },
+  "Chemistry": {
+    "section": "3"
+  },
+  "Archaeology": {
+    "section": "1"
+  },
+  "CN_Scholarship": {
+    "section": "8"
+  },
+  "OurTshirts": {
+    "section": "0"
+  },
+  "XinJiang": {
+    "section": "2"
+  },
+  "Italiano": {
+    "section": "C"
+  },
+  "PKUdebate": {
+    "section": "A"
+  },
+  "StarsOfBDWM": {
+    "section": "0"
+  },
+  "News_Editing": {
+    "section": "C"
+  },
+  "PKU_HMT": {
+    "section": "F"
+  },
+  "cinemapku": {
+    "section": "A"
+  },
+  "SecretGarden": {
+    "section": "7"
+  },
+  "ROSS": {
+    "section": "A"
+  },
+  "ADintro": {
+    "section": "C"
+  },
+  "Xuanliu": {
+    "section": "1"
+  },
+  "Story": {
+    "section": "5"
+  },
+  "Psychology": {
+    "section": "1"
+  },
+  "SUN": {
+    "section": "A"
+  },
+  "PKUBBS": {
+    "section": "0"
+  },
+  "RedCross": {
+    "section": "A"
+  },
+  "LiangPin": {
+    "section": "6"
+  },
+  "ILCA": {
+    "section": "A"
+  },
+  "WizArdS": {
+    "section": "G"
+  },
+  "ShenaRingo": {
+    "section": "N"
+  },
+  "Admin5_Bar": {
+    "section": "5"
+  },
+  "Referees": {
+    "section": "9"
+  },
+  "ElvaHsiao": {
+    "section": "6"
+  },
+  "Herbalism": {
+    "section": "3"
+  },
+  "InnerMongolia": {
+    "section": "2"
+  },
+  "LAAPKU": {
+    "section": "A"
+  },
+  "Sensibility": {
+    "section": "7"
+  },
+  "ElecDIY": {
+    "section": "3"
+  },
+  "PKU_VI": {
+    "section": "F"
+  },
+  "ParttimeJob": {
+    "section": "8"
+  },
+  "WHU": {
+    "section": "2"
+  },
+  "HSCPINGYU": {
+    "section": "A"
+  },
+  "SZINFO": {
+    "section": "1"
+  },
+  "Collection": {
+    "section": "0"
+  },
+  "Video_Game": {
+    "section": "6"
+  },
+  "WallaceChung": {
+    "section": "6"
+  },
+  "Mathe_Logic": {
+    "section": "C"
+  },
+  "SIEN": {
+    "section": "A"
+  },
+  "Loveletter": {
+    "section": "7"
+  },
+  "OldSoftware": {
+    "section": "4"
+  },
+  "DangKe": {
+    "section": "B"
+  },
+  "TECC": {
+    "section": "A"
+  },
+  "CinemaArt": {
+    "section": "5"
+  },
+  "ScienceFiction": {
+    "section": "5"
+  },
+  "Groups": {
+    "section": "0"
+  },
+  "PKU_JuXing": {
+    "section": "B"
+  },
+  "JMusic": {
+    "section": "6"
+  },
+  "MNWH": {
+    "section": "3"
+  },
+  "Science": {
+    "section": "3"
+  },
+  "GuitarPKU": {
+    "section": "A"
+  },
+  "wenji": {
+    "section": "4"
+  },
+  "YunNan": {
+    "section": "2"
+  },
+  "le_francais": {
+    "section": "C"
+  },
+  "TryYourBest": {
+    "section": "6"
+  },
+  "CCEA": {
+    "section": "A"
+  },
+  "KungfuScholar": {
+    "section": "A"
+  },
+  "ADA": {
+    "section": "A"
+  },
+  "AITC": {
+    "section": "C"
+  },
+  "Chelsea": {
+    "section": "9"
+  },
+  "TWLiterature": {
+    "section": "C"
+  },
+  "LeagueHome": {
+    "section": "B"
+  },
+  "mediahistory": {
+    "section": "C"
+  },
+  "Tuozhan": {
+    "section": "C"
+  },
+  "ChiMusicTheory": {
+    "section": "C"
+  },
+  "Admin3": {
+    "section": "0"
+  },
+  "Jeff": {
+    "section": "6"
+  },
+  "TianJin": {
+    "section": "2"
+  },
+  "Tea": {
+    "section": "5"
+  },
+  "Aikido": {
+    "section": "A"
+  },
+  "PublicElective": {
+    "section": "C"
+  },
+  "Admin4_Space": {
+    "section": "4"
+  },
+  "YASP": {
+    "section": "A"
+  },
+  "FFFamily": {
+    "section": "G"
+  },
+  "ZheJiang": {
+    "section": "2"
+  },
+  "EasonChan": {
+    "section": "6"
+  },
+  "AFPLA": {
+    "section": "A"
+  },
+  "webgame": {
+    "section": "N"
+  },
+  "STS": {
+    "section": "C"
+  },
+  "LSIA": {
+    "section": "A"
+  },
+  "CDMClub": {
+    "section": "A"
+  },
+  "Chromatics": {
+    "section": "C"
+  },
+  "CIS": {
+    "section": "1"
+  },
+  "CJSFL": {
+    "section": "C"
+  },
+  "PVCA": {
+    "section": "A"
+  },
+  "Memory": {
+    "section": "7"
+  },
+  "ASCIIArt": {
+    "section": "5"
+  },
+  "PKUdevelopment": {
+    "section": "1"
+  },
+  "Electronics": {
+    "section": "1"
+  },
+  "Homepage": {
+    "section": "4"
+  },
+  "ypjh": {
+    "section": "1"
+  },
+  "LoveCatMeetU": {
+    "section": "G"
+  },
+  "PKUSZ": {
+    "section": "1"
+  },
+  "VisualBasic": {
+    "section": "4"
+  },
+  "Admin8_Discuss": {
+    "section": "8"
+  },
+  "TV": {
+    "section": "6"
+  },
+  "MBXMT": {
+    "section": "0"
+  },
+  "CCYuan": {
+    "section": "1"
+  },
+  "Adonis": {
+    "section": "5"
+  },
+  "Opera": {
+    "section": "C"
+  },
+  "TLS": {
+    "section": "A"
+  },
+  "IJC": {
+    "section": "C"
+  },
+  "TOEAPU": {
+    "section": "A"
+  },
+  "cwcart": {
+    "section": "C"
+  },
+  "RockMusic": {
+    "section": "6"
+  },
+  "Law": {
+    "section": "1"
+  },
+  "Piefriends": {
+    "section": "7"
+  },
+  "FlightSim": {
+    "section": "6"
+  },
+  "BMC": {
+    "section": "1"
+  },
+  "Windows": {
+    "section": "4"
+  },
+  "PKU_GRS": {
+    "section": "F"
+  },
+  "cnBM": {
+    "section": "0"
+  },
+  "HSCBBA": {
+    "section": "A"
+  },
+  "Leisure_Game": {
+    "section": "6"
+  },
+  "RealMadrid": {
+    "section": "9"
+  },
+  "Future": {
+    "section": "7"
+  },
+  "ESC": {
+    "section": "A"
+  },
+  "STARS": {
+    "section": "B"
+  },
+  "Railway": {
+    "section": "5"
+  },
+  "Assoc_HSC": {
+    "section": "A"
+  },
+  "SAS_PKU": {
+    "section": "B"
+  },
+  "Admin7": {
+    "section": "0"
+  },
+  "QuantumChem": {
+    "section": "C"
+  },
+  "SecondDegree": {
+    "section": "C"
+  },
+  "MyLittlePoor": {
+    "section": "G"
+  },
+  "ArchSciTech": {
+    "section": "3"
+  },
+  "Admin8s": {
+    "section": "8"
+  },
+  "PKU_Zen": {
+    "section": "A"
+  },
+  "Hardware": {
+    "section": "4"
+  },
+  "Intern": {
+    "section": "8"
+  },
+  "Skate": {
+    "section": "9"
+  },
+  "NKU": {
+    "section": "2"
+  },
+  "DVDZone": {
+    "section": "6"
+  },
+  "PKURobot": {
+    "section": "A"
+  },
+  "WWWStudio": {
+    "section": "0",
+    "private": true
+  },
+  "Editors": {
+    "section": "0",
+    "private": true
+  },
+  "CreativeStudio": {
+    "section": "0",
+    "private": true
+  },
+  "manager": {
+    "section": "0",
+    "private": true
+  },
+  "Cultivation": {
+    "section": "5",
+    "private": true
+  },
+  "DevTeam": {
+    "section": "0",
+    "private": true
+  },
+  "Reconstruction": {
+    "section": "0",
+    "private": true
+  },
+  "BMTthree": {
+    "section": "0",
+    "private": true
+  },
+  "BMTone": {
+    "section": "0",
+    "private": true
+  },
+  "NewDevGroup": {
+    "section": "0",
+    "private": true
+  },
+  "Admin7_Office": {
+    "section": "7",
+    "private": true
+  },
+  "BMTnine": {
+    "section": "0",
+    "private": true
+  },
+  "Admin6_Office": {
+    "section": "6",
+    "private": true
+  },
+  "BMTseven": {
+    "section": "0",
+    "private": true
+  },
+  "Admin3_Office": {
+    "section": "3",
+    "private": true
+  },
+  "Architects": {
+    "section": "0",
+    "private": true
+  },
+  "Admin8_Office": {
+    "section": "8",
+    "private": true
+  },
+  "BBShelp": {
+    "section": "0",
+    "private": true
+  },
+  "BMTfive": {
+    "section": "0",
+    "private": true
+  },
+  "JudgeCommittee": {
+    "section": "5",
+    "private": true
+  },
+  "minuxtest": {
+    "section": "0",
+    "private": true
+  },
+  "Admin1_Office": {
+    "section": "1",
+    "private": true
+  },
+  "BMTeight": {
+    "section": "0",
+    "private": true
+  },
+  "BMTtwo": {
+    "section": "0",
+    "private": true
+  },
+  "Jail": {
+    "section": "0",
+    "private": true
+  },
+  "BoardClub": {
+    "section": "0",
+    "private": true
+  },
+  "WMWiki": {
+    "section": "4",
+    "private": true
+  },
+  "BMTraining": {
+    "section": "0",
+    "private": true
+  },
+  "BMTfour": {
+    "section": "0",
+    "private": true
+  },
+  "AdminG_Office": {
+    "section": "G",
+    "private": true
+  },
+  "RulesRevision": {
+    "section": "0",
+    "private": true
+  },
+  "TeamANNI": {
+    "section": "0",
+    "private": true
+  },
+  "BMTsix": {
+    "section": "0",
+    "private": true
+  },
+  "ASCII_club": {
+    "section": "0",
+    "private": true
+  },
+  "colorzone": {
+    "section": "0",
+    "private": true
+  },
+  "watertest": {
+    "section": "0",
+    "private": true
+  },
+  "AcademicOffice": {
+    "section": "3",
+    "private": true
+  },
+  "AdminG_Talk": {
+    "section": "G",
+    "private": true
+  },
+  "TuanGouOffice": {
+    "section": "8",
+    "private": true
+  },
+  "AdminG_Test": {
+    "section": "G",
+    "private": true
+  },
+  "Admin6_Closed": {
+    "section": "6",
+    "private": true
+  },
+  "Mailbox": {
+    "section": "0",
+    "private": true
+  },
+  "Admin5_Office": {
+    "section": "5",
+    "private": true
+  },
+  "Downstairs": {
+    "section": "0",
+    "private": true
+  },
+  "Admin4_Office": {
+    "section": "4",
+    "private": true
+  },
+  "TshirtsVote": {
+    "section": "0",
+    "private": true
+  },
+  "ArbClub": {
+    "section": "0",
+    "private": true
+  },
+  "AdminABC_Office": {
+    "section": "A",
+    "private": true
+  },
+  "SomeBoard": {
+    "section": "8",
+    "private": true
+  },
+  "ITMarketOffice": {
+    "section": "4",
+    "private": true
+  },
+  "BMTestT": {
+    "section": "0",
+    "private": true
+  },
+  "DailyRoutine": {
+    "section": "0",
+    "private": true
+  },
+  "MarketCenter": {
+    "section": "8",
+    "private": true
+  },
+  "AnniMB": {
+    "section": "0",
+    "private": true
+  },
+  "Admin8_Club": {
+    "section": "8",
+    "private": true
   }
 }
