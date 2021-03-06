@@ -90,6 +90,12 @@ def read_file(path):
         return f.read()
 
 
+def parse_time_from_string(mail_time_str) -> datetime.datetime:
+    return datetime.datetime(
+        int(mail_time_str[0:4]), int(mail_time_str[5:7]), int(mail_time_str[8:10]),
+        int(mail_time_str[11:13]), int(mail_time_str[14:16]), int(mail_time_str[17:19]))
+
+
 def get_mail_postid_and_time(page_content) -> List[Tuple[int, datetime.datetime]]:
     soup = BeautifulSoup(page_content, features="html.parser")
 
@@ -98,9 +104,8 @@ def get_mail_postid_and_time(page_content) -> List[Tuple[int, datetime.datetime]
     for mail in mails:
         if 'data-itemid' not in mail.attrs:
             continue
-        mail_time = mail.find('span', attrs={'class': 'time l'}).text
+        mail_time_str = mail.find('span', attrs={'class': 'time l'}).text
         # 2020-08-06 16:05:31
-        mail_datetime = datetime.datetime(int(mail_time[0:4]), int(mail_time[5:7]), int(mail_time[8:10]),
-                                          int(mail_time[11:13]), int(mail_time[14:16]), int(mail_time[17:19]))
+        mail_datetime = parse_time_from_string(mail_time_str)
         postids.append((mail.attrs['data-itemid'], mail_datetime))
     return postids

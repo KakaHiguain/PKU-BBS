@@ -6,13 +6,12 @@ Created on Sat Oct 31 19:22:48 2020
 @author: KakaHiguain@BDWM
 """
 
-import datetime
 from typing import List
 
 import click
 
 from BDWM import BDWM
-from utils import read_file, get_mail_postid_and_time
+from utils import read_file, get_mail_postid_and_time, parse_time_from_string
 
 
 def _get_bdwm_client(id, password, password_file):
@@ -115,33 +114,35 @@ def import_collection(id, password, password_file, board, path, postids, interna
         bdwm.add_new_collection(board, api_path, int(postid))
 
 
+def _parse_datetime(ctx, param, value):
+    assert len(value) == 19
+    return parse_time_from_string(value)
+
+
 @main.command()
 @click.option('--id', required=True, help='Your BDWM ID')
 @click.option('-p', '--password', help='The password of your BDWM ID')
 @click.option('-pf', '--password-file', help='The file containing your password')
 @click.option('-b', '--board', required=True, help='The name of the board you want to post to')
-# TODO: Add validation.
-@click.option('--start-datetime', required=True, help='The start date and time, YYYYMMDDHHMMSS')
-@click.option('--end-datetime', required=True, help='The end date and time, YYYYMMDDHHMMSS')
-def forward_mail_within_time_range(id, password, password_file, board, start_datetime, end_datetime):
+@click.option('--start', required=True, callback=_parse_datetime,
+              help='The start date and time, YYYY-MM-DD HH:MM:SS')
+@click.option('--end', required=True, callback=_parse_datetime,
+              help='The end date and time, YYYY-MM-DD HH:MM:SS')
+def forward_mail_within_time_range(id, password, password_file, board, start, end):
+    if start > end:
+        raise ValueError('Start time can not later than end time!')
     bdwm = _get_bdwm_client(id, password, password_file)
-    # 20200806160531
-    start_datetime = datetime.datetime(int(start_datetime[0:4]), int(start_datetime[4:6]),
-                                       int(start_datetime[6:8]), int(start_datetime[8:10]),
-                                       int(start_datetime[10:12]), int(start_datetime[12:14]))
-    end_datetime = datetime.datetime(int(end_datetime[0:4]), int(end_datetime[4:6]),
-                                     int(end_datetime[6:8]), int(end_datetime[8:10]),
-                                     int(end_datetime[10:12]), int(end_datetime[12:14]))
+    # 2020-08-06 16:05:31
     page = 1
     finished = False
     postids = []
     while not finished:
         mails = get_mail_postid_and_time(bdwm.get_mail_content(page=page))
         for mail in mails:
-            if mail[1] < start_datetime:
+            if mail[1] < start:
                 finished = True
                 break
-            if mail[1] > end_datetime:
+            if mail[1] > end:
                 continue
             postids.append(mail[0])
         page += 1
