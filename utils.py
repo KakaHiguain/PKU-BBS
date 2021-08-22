@@ -90,6 +90,7 @@ def read_file(path):
         return f.read()
 
 
+# TODO(KakaHiguain): Use dateutil.parse
 def parse_time_from_string(mail_time_str) -> datetime.datetime:
     return datetime.datetime(
         int(mail_time_str[0:4]), int(mail_time_str[5:7]), int(mail_time_str[8:10]),

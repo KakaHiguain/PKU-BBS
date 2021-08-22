@@ -120,15 +120,18 @@ def _parse_datetime(ctx, param, value):
 
 
 @main.command()
-@click.option('--id', required=True, help='Your BDWM ID')
-@click.option('-p', '--password', help='The password of your BDWM ID')
+@click.option('--id', required=True, prompt='北大未名用户名', default='PES')
+@click.option('-p', '--password', prompt='密码', hide_input=True)
 @click.option('-pf', '--password-file', help='The file containing your password')
-@click.option('-b', '--board', required=True, help='The name of the board you want to post to')
+@click.option('-b', '--board', required=True, prompt='转发的目标版面')
 @click.option('--start', required=True, callback=_parse_datetime,
-              help='The start date and time, YYYY-MM-DD HH:MM:SS')
+              prompt='开始时间, YYYY-MM-DD HH:MM:SS')
 @click.option('--end', required=True, callback=_parse_datetime,
-              help='The end date and time, YYYY-MM-DD HH:MM:SS')
-def forward_mail_within_time_range(id, password, password_file, board, start, end):
+              prompt='结束时间, YYYY-MM-DD HH:MM:SS')
+@click.option('--start-post', default='', prompt='转发前发的帖')
+@click.option('--end-post', default='', prompt='转发后发的帖')
+def forward_mail_within_time_range(
+        id, password, password_file, board, start, end, start_post, end_post):
     if start > end:
         raise ValueError('Start time can not later than end time!')
     bdwm = _get_bdwm_client(id, password, password_file)
@@ -147,10 +150,12 @@ def forward_mail_within_time_range(id, password, password_file, board, start, en
             postids.append(mail[0])
         page += 1
 
-    # bdwm.create_post(board, 'Soy 莫得感情的开标机器', '')
+    if start_post:
+        bdwm.create_post(board, start_post)
     for postid in reversed(postids):
         bdwm.forward_mail_to_board(board, postid)
-    # bdwm.create_post(board, 'Adios', '')
+    if end_post:
+        bdwm.create_post(board, end_post)
 
 
 if __name__ == '__main__':

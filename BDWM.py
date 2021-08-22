@@ -125,7 +125,7 @@ class BDWM:
         return '{{{}}}'.format(post_info)
 
     # Functions about post.
-    def create_post(self, board_name, title, content_string,
+    def create_post(self, board_name, title, content_string='',
                     mail_re=True, no_reply=False, signature=None, parent_id: int = None):
         content = get_content_from_raw_string(content_string)
         bid = self._get_board_info(board_name, 'id')
