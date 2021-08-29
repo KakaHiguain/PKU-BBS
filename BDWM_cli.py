@@ -22,20 +22,29 @@ def _get_bdwm_client(id, password, password_file):
     return BDWM(id, password)
 
 
+def _common_options(func):
+    decorators = [
+        click.option('--id', required=True, prompt='北大未名用户名', default='PES'),
+        click.option('-p', '--password', prompt='密码', default='', hide_input=True),
+        click.option('-pf', '--password-file', help='The file containing your password'),
+    ]
+    for decorator in reversed(decorators):
+        func = decorator(func)
+    return func
+
+
 @click.group()
 def main():
     pass
 
 
 @main.command()
-@click.option('--id', required=True, help='Your BDWM ID')
-@click.option('-p', '--password', help='The password of your BDWM ID')
-@click.option('-pf', '--password-file', help='The file containing your password')
+@_common_options
 @click.option('-b', '--board', required=True, help='The name of the board you want to post to')
 @click.option('--title', required=True, help='The post title')
 @click.option('--content', help='The post content')
 @click.option('--content-file', help='The file containing the post content')
-@click.option('--no-reply', type=click.BOOL, default=False, help='Not allow other people to reply')
+@click.option('--no-reply', is_flag=True, default=False, help='Not allow other people to reply')
 @click.option('--parent-id', default=None, help='The thread id of the main post you reply to')
 def post(id, password, password_file, board, title, content, content_file, no_reply, parent_id):
     bdwm = _get_bdwm_client(id, password, password_file)
@@ -45,9 +54,7 @@ def post(id, password, password_file, board, title, content, content_file, no_re
 
 
 @main.command()
-@click.option('--id', required=True, help='Your BDWM ID')
-@click.option('-p', '--password', help='The password of your BDWM ID')
-@click.option('-pf', '--password-file', help='The file containing your password')
+@_common_options
 @click.option('-b', '--board', required=True, help='The name of the board you want to post to')
 @click.option('--postid', required=True, help='The ID of the post you want to edit')
 @click.option('--title', required=True, help='The post title')
@@ -82,9 +89,7 @@ def _get_postid_list_from_internal_postids(bdwm, board, internal_postids) -> Lis
 
 
 @main.command()
-@click.option('--id', required=True, help='Your BDWM ID')
-@click.option('-p', '--password', help='The password of your BDWM ID')
-@click.option('-pf', '--password-file', help='The file containing your password')
+@_common_options
 @click.option('-b', '--board', required=True, help='The name of the board you want to import collection')
 @click.option('--path', required=True, help='Collection path we see on the website')
 @click.option('--postids', help='The IDs of the post you want to collect, split by ","')
@@ -120,9 +125,7 @@ def _parse_datetime(ctx, param, value):
 
 
 @main.command()
-@click.option('--id', required=True, prompt='北大未名用户名', default='PES')
-@click.option('-p', '--password', prompt='密码', hide_input=True)
-@click.option('-pf', '--password-file', help='The file containing your password')
+@_common_options
 @click.option('-b', '--board', required=True, prompt='转发的目标版面')
 @click.option('--start', required=True, callback=_parse_datetime,
               prompt='开始时间, YYYY-MM-DD HH:MM:SS')
