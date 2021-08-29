@@ -6,12 +6,14 @@ Created on Sat Oct 31 19:22:48 2020
 @author: KakaHiguain@BDWM
 """
 
+import datetime
 from typing import List
 
 import click
+import dateutil.parser
 
 from BDWM import BDWM
-from utils import read_file, get_mail_postid_and_time, parse_time_from_string
+from utils import read_file, get_mail_postid_and_time
 
 
 def _get_bdwm_client(id, password, password_file):
@@ -119,18 +121,15 @@ def import_collection(id, password, password_file, board, path, postids, interna
         bdwm.add_new_collection(board, api_path, int(postid))
 
 
-def _parse_datetime(ctx, param, value):
-    assert len(value) == 19
-    return parse_time_from_string(value)
+def _parse_datetime(ctx, param, value) -> datetime.datetime:
+    return dateutil.parser.parse(value)
 
 
 @main.command()
 @_common_options
 @click.option('-b', '--board', required=True, prompt='转发的目标版面')
-@click.option('--start', required=True, callback=_parse_datetime,
-              prompt='开始时间, YYYY-MM-DD HH:MM:SS')
-@click.option('--end', required=True, callback=_parse_datetime,
-              prompt='结束时间, YYYY-MM-DD HH:MM:SS')
+@click.option('--start', required=True, callback=_parse_datetime, prompt='开始时间, MM/DD HH:MM')
+@click.option('--end', required=True, callback=_parse_datetime, prompt='结束时间, MM/DD HH:MM')
 @click.option('--start-post', default='', prompt='转发前发的帖')
 @click.option('--end-post', default='', prompt='转发后发的帖')
 def forward_mail_within_time_range(

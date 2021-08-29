@@ -9,6 +9,7 @@ import datetime
 from typing import List, Tuple
 
 from bs4 import BeautifulSoup
+import dateutil.parser
 
 
 SEPARATE_BAR = "======================"
@@ -90,7 +91,7 @@ def read_file(path):
         return f.read()
 
 
-# TODO(KakaHiguain): Use dateutil.parse
+# Deprecated.
 def parse_time_from_string(mail_time_str) -> datetime.datetime:
     return datetime.datetime(
         int(mail_time_str[0:4]), int(mail_time_str[5:7]), int(mail_time_str[8:10]),
@@ -107,6 +108,6 @@ def get_mail_postid_and_time(page_content) -> List[Tuple[int, datetime.datetime]
             continue
         mail_time_str = mail.find('span', attrs={'class': 'time l'}).text
         # 2020-08-06 16:05:31
-        mail_datetime = parse_time_from_string(mail_time_str)
+        mail_datetime = dateutil.parser.parse(mail_time_str)
         postids.append((mail.attrs['data-itemid'], mail_datetime))
     return postids
