@@ -91,11 +91,25 @@ def read_file(path):
         return f.read()
 
 
-# Deprecated.
-def parse_time_from_string(mail_time_str) -> datetime.datetime:
-    return datetime.datetime(
-        int(mail_time_str[0:4]), int(mail_time_str[5:7]), int(mail_time_str[8:10]),
-        int(mail_time_str[11:13]), int(mail_time_str[14:16]), int(mail_time_str[17:19]))
+def get_postid_list_from_internal_postids(bdwm, board, internal_postids) -> List[str]:
+    parts = internal_postids.split(',')
+    internal_postid_list = []
+    for part in parts:
+        pos = part.find('~')
+        if pos == -1:
+            internal_postid_list.append(int(part))
+        else:
+            left_bound, right_bound = int(part[:pos]), int(part[pos + 1:])
+            if left_bound > right_bound:
+                raise ValueError('Invalid interval: {}!'.format(part))
+            internal_postid_list.extend(range(left_bound, right_bound + 1))
+
+    postid_list = []
+    for internal_postid in internal_postid_list:
+        post_info = bdwm.get_post_by_num(board, internal_postid)
+        postid_list.append(post_info['list'][0]['postid'])
+
+    return postid_list
 
 
 def get_mail_postid_and_time(page_content) -> List[Tuple[int, datetime.datetime]]:
