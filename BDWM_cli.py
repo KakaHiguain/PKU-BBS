@@ -16,18 +16,16 @@ from BDWM import BDWM
 from utils import read_file, get_mail_postid_and_time
 
 
-def _get_bdwm_client(id, password, password_file):
+def _get_bdwm_client(id, password_file):
+    password = read_file(password_file).strip('\n') if password_file else None
     if not password:
-        if not password_file:
-            raise ValueError('Please specify password or password_file')
-        password = read_file(password_file).strip('\n')
+        password = click.prompt('请输入密码 (不会显示)：', hide_input=True)
     return BDWM(id, password)
 
 
 def _common_options(func):
     decorators = [
         click.option('--id', required=True, prompt='北大未名用户名', default='PES'),
-        click.option('-p', '--password', prompt='密码', default='', hide_input=True),
         click.option('-pf', '--password-file', help='The file containing your password'),
     ]
     for decorator in reversed(decorators):
@@ -48,8 +46,8 @@ def main():
 @click.option('--content-file', help='The file containing the post content')
 @click.option('--no-reply', is_flag=True, default=False, help='Not allow other people to reply')
 @click.option('--parent-id', default=None, help='The thread id of the main post you reply to')
-def post(id, password, password_file, board, title, content, content_file, no_reply, parent_id):
-    bdwm = _get_bdwm_client(id, password, password_file)
+def post(id, password_file, board, title, content, content_file, no_reply, parent_id):
+    bdwm = _get_bdwm_client(id, password_file)
     if not content:
         content = read_file(content_file) if content_file else ''
     bdwm.create_post(board, title, content, no_reply=no_reply, parent_id=parent_id)
@@ -62,8 +60,8 @@ def post(id, password, password_file, board, title, content, content_file, no_re
 @click.option('--title', required=True, help='The post title')
 @click.option('--content', help='The post content')
 @click.option('--content-file', help='The file containing the post content')
-def edit(id, password, password_file, board, postid, title, content, content_file):
-    bdwm = _get_bdwm_client(id, password, password_file)
+def edit(id, password_file, board, postid, title, content, content_file):
+    bdwm = _get_bdwm_client(id, password_file)
     if not content:
         content = read_file(content_file) if content_file else ''
     bdwm.edit_post(board, postid, title, content)
@@ -102,9 +100,9 @@ def _get_postid_list_from_internal_postids(bdwm, board, internal_postids) -> Lis
 @click.option('--sort', is_flag=True, default=False, help='Sort the posts by their ids')
 @click.option('--create-if-not-exists', is_flag=True, default=False,
               help='Create a new sub-directory if the path does not exists.')
-def import_collection(id, password, password_file, board, path, postids, internal_postids,
+def import_collection(id, password_file, board, path, postids, internal_postids,
                       sort, create_if_not_exists):
-    bdwm = _get_bdwm_client(id, password, password_file)
+    bdwm = _get_bdwm_client(id, password_file)
     api_path = bdwm.get_collection_dir_path(board, path, create_if_not_exists)
 
     if not postids:
@@ -133,10 +131,10 @@ def _parse_datetime(ctx, param, value) -> datetime.datetime:
 @click.option('--start-post', default='', prompt='转发前发的帖')
 @click.option('--end-post', default='', prompt='转发后发的帖')
 def forward_mail_within_time_range(
-        id, password, password_file, board, start, end, start_post, end_post):
+        id, password_file, board, start, end, start_post, end_post):
     if start > end:
         raise ValueError('Start time can not later than end time!')
-    bdwm = _get_bdwm_client(id, password, password_file)
+    bdwm = _get_bdwm_client(id, password_file)
     # 2020-08-06 16:05:31
     page = 1
     finished = False
